@@ -74,7 +74,7 @@ export default function BentoGridSection({ className }: { className?: string }) 
       <div className="max-w-container mx-auto px-4">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-10">
           <div>
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900">Research, Announcements & Thought Leadership</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900">Latest Insights</h2>
             <p className="text-black mx-auto mt-2">
               Connecting ideas, to impact - bringing together news, insights, perspectives, and decisions that shape the future
             </p>
