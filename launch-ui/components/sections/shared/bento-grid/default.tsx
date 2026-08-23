@@ -83,7 +83,7 @@ export default function BentoGridSection({ className }: { className?: string }) 
             href={siteConfig.page.blog}  // or use a specific insights/blog page URL
             className="text-primary hover:text-primary/80 flex items-center whitespace-nowrap group mt-4 md:mt-0"
           >
-            Explore all Tech Blogs
+            More Insights
             <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
           </Link>
         </div>
