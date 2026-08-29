@@ -16,7 +16,7 @@ export default function FeatureCards({ className }: { className?: string }) {
   const features: FeatureCard[] = [
     {
       image: "https://media.istockphoto.com/id/1419539600/photo/business-presentation-and-man-on-a-laptop-in-a-corporate-conference-or-office-collaboration.jpg?s=612x612&w=0&k=20&c=viDl-Gtp68kqaCeh0WbnqM0EERvGec4i5C_Vk84VHKE=",
-      title: "Our Mission and Values",
+      title: "Our mission and values",
       description: "Our values of impact, aspiration and trust make us who we are and guide everything we do.",
       href: siteConfig.page.AiProcessAutomation || "/features/feedback-analyser",
     },

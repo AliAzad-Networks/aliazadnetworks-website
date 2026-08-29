@@ -1,18 +1,17 @@
 import { type VariantProps } from "class-variance-authority";
-import { ArrowRightIcon, CalendarCheck} from "lucide-react";
+import { ArrowRightIcon, CalendarCheck } from "lucide-react";
 import { ReactNode } from "react";
 
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
-
-import Github from "@/components/logos/github";
 import { Badge } from "@/components/ui/badge";
 import { Button, buttonVariants } from "@/components/ui/button";
 import Glow from "@/components/ui/glow";
 import { Mockup, MockupFrame } from "@/components/ui/mockup";
 import Screenshot from "@/components/ui/screenshot";
 import { Section } from "@/components/ui/section";
-import { CanvasText } from "@/components/ui/canvas-text";
+// Import the FlipWords component
+import { FlipWords } from "@/components/ui/flip-words";
 
 interface HeroButtonProps {
   href: string;
@@ -42,7 +41,6 @@ export default function Hero({
       width={1248}
       height={765}
       className="w-full"
-      
     />
   ),
   badge = (
@@ -71,6 +69,9 @@ export default function Hero({
   ],
   className,
 }: HeroProps) {
+  // 👇 Define the words that will flip
+  const flipWords = ["Business", "Innovation", "Software"];
+
   return (
     <Section
       className={cn(
@@ -81,9 +82,16 @@ export default function Hero({
       <div className="max-w-container mx-auto flex flex-col gap-12 pt-16 sm:gap-24">
         <div className="flex flex-col items-center gap-6 text-center sm:gap-12">
           {badge !== false && badge}
-          <h1 className="animate-appear from-foreground to-foreground dark:to-muted-foreground relative z-10 inline-block bg-linear-to-r bg-clip-text text-4xl leading-tight font-semibold text-balance text-transparent drop-shadow-2xl sm:text-6xl sm:leading-tight md:text-8xl md:leading-tight">
-            {title}
+          
+          {/* Modified h1 with FlipWords */}
+          <h1 className="animate-appear from-foreground to-foreground dark:to-muted-foreground relative z-10 inline-block bg-linear-to-r bg-clip-text text-4xl leading-tight font-semibold text-balance drop-shadow-2xl sm:text-6xl sm:leading-tight md:text-8xl md:leading-tight">
+            We Can Help You Reimagine Your Business Through A{" "}
+            <FlipWords 
+              words={flipWords} 
+              
+            />
           </h1>
+
           <p className="text-md animate-appear text-black relative z-10 max-w-6xl text-balance opacity-0 delay-100 sm:text-xl">
             {description}
           </p>
@@ -96,7 +104,7 @@ export default function Hero({
                   variant={button.variant || "default"}
                   size="lg"
                   asChild
-                  className="w-full sm:w-auto" // full width on mobile
+                  className="w-full sm:w-auto"
                 >
                   <a href={button.href}>
                     {button.icon}
@@ -109,12 +117,12 @@ export default function Hero({
           )}
           {mockup !== false && (
             <div className="relative w-full pt-6">
-              <MockupFrame
+              {/* <MockupFrame
                 className="animate-appear opacity-0 delay-700"
                 size="small"
               >
-                
-              </MockupFrame>
+                {mockup}
+              </MockupFrame> */}
               <Glow
                 variant="top"
                 className="animate-appear-zoom opacity-0 delay-1000"

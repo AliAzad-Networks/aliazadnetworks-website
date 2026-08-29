@@ -53,7 +53,6 @@ export default function CTA({
       icon: <WhatsAppIcon />,  // Use real WhatsApp icon
     },
   ],
-  trustLine = "No payment required · Response within 2 hours · DPIIT Registered Company",
   className,
 }: CTAProps) {
   return (
@@ -93,20 +92,7 @@ export default function CTA({
             ))}
           </div>
         )}
-        
-        {/* Trust Micro-line */}
-        {trustLine && (
-          <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-xs text-muted-foreground mt-2">
-            {trustLine.split('·').map((item, index) => (
-              <span key={index} className="flex items-center gap-1.5">
-                {index === 0 && <CheckCircle className="h-3.5 w-3.5 text-green-500" />}
-                {index === 1 && <Clock className="h-3.5 w-3.5 text-blue-500" />}
-                {index === 2 && <Shield className="h-3.5 w-3.5 text-purple-500" />}
-                {item.trim()}
-              </span>
-            ))}
-          </div>
-        )}
+                
       </div>
       
       {/* Glow Effect */}

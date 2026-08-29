@@ -27,7 +27,7 @@ interface HeroProps {
 
 export default function Hero({
   title = "Stop Doing Manually ",
-  description = "We map your most time-consuming manual processes, then build AI systems that handle them automatically — 24/7, with zero errors and no extra headcount.",
+  description = "We map your most time-consuming manual processes, then build AI systems that handle them automatically 24/7, with zero errors and no extra headcount.",
   buttons = [
     {
       href: siteConfig.getStartedUrl,
@@ -89,25 +89,6 @@ export default function Hero({
                 ))}
               </div>
             )}
-            {/* Trust Badges */}
-            <div className="flex flex-wrap justify-center md:justify-start gap-4 mt-8">
-                <div className="flex items-center gap-2">
-                    <Check className="w-4 h-4 text-green-500" />
-                    <span className="text-sm text-muted-foreground">DPIIT Registered Company</span>
-                </div>
-                <div className="flex items-center gap-2">
-                    <Check className="w-4 h-4 text-green-500" />
-                    <span className="text-sm text-muted-foreground">50+ Startups Served</span>
-                </div>
-                <div className="flex items-center gap-2">
-                    <Check className="w-4 h-4 text-green-500" />
-                    <span className="text-sm text-muted-foreground">100% Source Code Ownership</span>
-                </div>
-                <div className="flex items-center gap-2">
-                    <Check className="w-4 h-4 text-green-500" />
-                    <span className="text-sm text-muted-foreground">NDA Available</span>
-                </div>
-            </div>
           </div>
           
           
