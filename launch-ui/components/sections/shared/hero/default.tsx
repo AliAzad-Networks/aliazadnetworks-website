@@ -70,7 +70,7 @@ export default function Hero({
   className,
 }: HeroProps) {
   // 👇 Define the words that will flip
-  const flipWords = ["Business", "Innovation", "Software"];
+  const flipWords = ["Automate", "Innovate", "Scale"];
 
   return (
     <Section
