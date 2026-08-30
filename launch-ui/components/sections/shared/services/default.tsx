@@ -36,10 +36,10 @@ const ServiceCard = ({ title, description, icon: Icon, href, imageSrc, imageAlt 
         
         {/* Content */}
         <div className="absolute inset-0 flex flex-col justify-end p-6 text-white">
-          {/* Icon */}
+          {/* Icon
           <div className="mb-3 transform transition-transform duration-500">
             <Icon className="w-10 h-10" strokeWidth={1.5} />
-          </div>
+          </div> */}
           
           {/* Title */}
           <h3 className="text-2xl font-bold mb-2 transform group-hover:translate-y-[-4px] transition-transform duration-500">
