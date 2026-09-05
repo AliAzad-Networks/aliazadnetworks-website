@@ -1,6 +1,4 @@
 [build]
+  base = "launch-ui"
   command = "npm run build"
-  publish = "launch-ui/.next"
-
-[build.environment]
-  NODE_VERSION = "24"
+  publish = ".next"
