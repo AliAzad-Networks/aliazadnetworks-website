@@ -85,10 +85,10 @@ export default function Hero({
           
           {/* Modified h1 with FlipWords */}
           <h1 className="animate-appear from-foreground to-foreground dark:to-muted-foreground relative z-10 inline-block bg-linear-to-r bg-clip-text text-4xl leading-tight font-semibold text-balance drop-shadow-2xl sm:text-6xl sm:leading-tight md:text-8xl md:leading-tight">
-            We Can Help You Reimagine Your Business Through A{" "}
+            We Can Help You Reimagine Your Business Through A {""}
             <FlipWords 
               words={flipWords} 
-              
+              duration={1500}
             />
           </h1>
 
