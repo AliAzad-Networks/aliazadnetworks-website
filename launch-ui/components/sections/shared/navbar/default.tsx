@@ -1,3 +1,6 @@
+"use client";
+
+import { useState, useEffect } from "react";
 import { type VariantProps } from "class-variance-authority";
 import { Menu } from "lucide-react";
 import { ReactNode } from "react";
@@ -61,6 +64,12 @@ export default function Navbar({
   customNavigation,
   className,
 }: NavbarProps) {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
   return (
     <header className={cn("sticky top-0 z-50 -mb-4 px-4 bg-white border-b border-gray-200", className)}>
       <div className="max-w-container relative mx-auto">
@@ -71,7 +80,6 @@ export default function Navbar({
               className="flex items-center gap-2 text-xl font-bold"
             >
               {logo}
-        
             </a>
             {showNavigation && (customNavigation || <Navigation />)}
           </NavbarLeft>
@@ -99,36 +107,37 @@ export default function Navbar({
                 </a>
               ),
             )}
-            <Sheet>
-              <SheetTrigger asChild>
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  className="shrink-0 md:hidden"
-                >
-                  <Menu className="size-5" />
-                  <span className="sr-only">Toggle navigation menu</span>
-                </Button>
-              </SheetTrigger>
-              <SheetContent side="right">
-                <nav className="grid gap-6 text-lg font-medium">
-                  <a
-                    href={siteConfig.homeUrl}
-                    className="flex items-center gap-2 text-xl font-bold"
+            {isMounted && (
+              <Sheet>
+                <SheetTrigger asChild>
+                  <Button
+                    variant="ghost"
+                    size="icon"
+                    className="shrink-0 md:hidden"
                   >
-                  </a>
-                  {mobileLinks.map((link, index) => (
+                    <Menu className="size-5" />
+                    <span className="sr-only">Toggle navigation menu</span>
+                  </Button>
+                </SheetTrigger>
+                <SheetContent side="right">
+                  <nav className="grid gap-6 text-lg font-medium">
                     <a
-                      key={index}
-                      href={link.href}
-                      className="text-muted-foreground hover:text-foreground"
-                    >
-                      {link.text}
-                    </a>
-                  ))}
-                </nav>
-              </SheetContent>
-            </Sheet>
+                      href={siteConfig.homeUrl}
+                      className="flex items-center gap-2 text-xl font-bold"
+                    ></a>
+                    {mobileLinks.map((link, index) => (
+                      <a
+                        key={index}
+                        href={link.href}
+                        className="text-muted-foreground hover:text-foreground"
+                      >
+                        {link.text}
+                      </a>
+                    ))}
+                  </nav>
+                </SheetContent>
+              </Sheet>
+            )}
           </NavbarRight>
         </NavbarComponent>
       </div>
