@@ -44,10 +44,10 @@ export default function Hero({
   ),
   badge = (
     <Badge variant="outline" className="animate-appear">
-      <span className="text-muted-foreground text-xs sm:text-sm">
-        Get your business automated in 30 days
+      <span className="text-muted-foreground">
+        Automate Your Business in 30 Days
       </span>
-      <a href={siteConfig.getStartedUrl} className="flex items-center gap-1 text-xs sm:text-sm">
+      <a href={siteConfig.getStartedUrl} className="flex items-center gap-1">
         Claim Your Slot
         <ArrowRightIcon className="size-3" />
       </a>
