@@ -27,37 +27,37 @@ const ServiceCard = ({ title, description, icon: Icon, href, imageSrc, imageAlt 
         <img
           src={imageSrc}
           alt={imageAlt}
-          className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+          className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
           loading="lazy"
         />
         
         {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-90 group-hover:opacity-95 transition-opacity duration-500" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-90 group-hover:opacity-95 transition-opacity duration-300" />
         
         {/* Content */}
         <div className="absolute inset-0 flex flex-col justify-end p-6 text-white">
           {/* Icon
-          <div className="mb-3 transform transition-transform duration-500">
+          <div className="mb-3 transform transition-transform duration-300">
             <Icon className="w-10 h-10" strokeWidth={1.5} />
           </div> */}
           
           {/* Title */}
-          <h3 className="text-2xl font-bold mb-2 transform group-hover:translate-y-[-4px] transition-transform duration-500">
+          <h3 className="text-2xl font-bold mb-2 transform group-hover:translate-y-[-4px] transition-transform duration-300">
             {title}
           </h3>
           
           {/* Description - hidden on mobile, visible on hover on desktop */}
-          <p className="text-sm text-white/90 mb-4 max-h-0 opacity-0 group-hover:max-h-20 group-hover:opacity-100 transition-all duration-500 overflow-hidden">
+          <p className="text-sm text-white/90 mb-4 max-h-0 opacity-0 group-hover:max-h-20 group-hover:opacity-100 transition-all duration-300 overflow-hidden">
             {description}
           </p>
           
           {/* CTA */}
-          <div className="flex items-center gap-2 text-sm font-medium transform translate-y-0 group-hover:translate-y-[-4px] transition-transform duration-500">
+          <div className="flex items-center gap-2 text-sm font-medium transform translate-y-0 group-hover:translate-y-[-4px] transition-transform duration-300">
             <span className="relative inline-block">
               View industry
-              <span className="absolute bottom-0 left-0 w-0 h-[1.5px] bg-white group-hover:w-full transition-all duration-500"></span>
+              <span className="absolute bottom-0 left-0 w-0 h-[1.5px] bg-white group-hover:w-full transition-all duration-300"></span>
             </span>
-            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-500" />
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
           </div>
         </div>
       </div>

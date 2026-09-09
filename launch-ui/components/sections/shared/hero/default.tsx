@@ -75,9 +75,9 @@ export default function Hero({
             </span>
           </h1>
 
-          <p className="text-md animate-appear text-black relative z-10 max-w-6xl text-balance opacity-0 delay-100 sm:text-xl">
-            {description}
-          </p>
+          <p className="text-sm animate-appear text-black relative z-10 max-w-6xl text-balance opacity-0 delay-100 sm:text-base md:text-xl">
+  {description}
+</p>
           
           {buttons !== false && buttons.length > 0 && (
             <div className="animate-appear relative z-10 flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 opacity-0 delay-300 w-full sm:w-auto px-4 sm:px-0">
