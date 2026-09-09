@@ -86,7 +86,7 @@ export default function Services({ className }: { className?: string }) {
     },
     {
       title: "Scalable Digital Transformation",
-      description: "A complete, end-to-end upgrade of how your business runs - replacing outdated manual systems with intelligent, automated infrastructure that handles 10× the workload without 10× the team.",
+      description: "A complete, end-to-end upgrade of how your business runs - replacing outdated manual systems with intelligent, automated infrastructure",
       icon: TrendingUp,
       href: siteConfig.page.DigitalTransformation,
       imageSrc: "https://cdn.scopicsoftware.com/wp-content/uploads/2024/08/custom-software-development-companies.webp",
