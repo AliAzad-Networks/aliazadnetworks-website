@@ -42,7 +42,7 @@ export default function Hero({
       icon: <CalendarCheck className="mr-2 h-4 w-4" />,
     },
   ],
-  imageSrc = "https://cdn.prod.website-files.com/6111627014d0c2d40cdc27e0/67975b8f6d5b10546772eb71_mero-work-loading.webp",
+  imageSrc = "/assets/images/SDT_Avtar.webp",
   imageAlt = "Hero illustration",
   className,
 }: HeroProps) {

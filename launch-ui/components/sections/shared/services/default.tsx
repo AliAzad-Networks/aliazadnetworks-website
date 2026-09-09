@@ -73,7 +73,7 @@ export default function Services({ className }: { className?: string }) {
       description: "From a simple workflow, to managing AI automation systems across your entire business, make it happen with intelligent systems",
       icon: Activity,
       href: siteConfig.page.AiProcessAutomation,
-      imageSrc: "https://d341ezm4iqaae0.cloudfront.net/hiringlaborg/sites/3/2026/07/07185539/Office_paneldiscussionaboutAIinfrontofgroup_Gettyperp-1.jpg",
+      imageSrc: "/assets/images/AI.jpg",
       imageAlt: "AI-Drivien Process Automation"
     },
     {
@@ -81,7 +81,7 @@ export default function Services({ className }: { className?: string }) {
       description: "Design, develop, and optimize custom software from solution architecture to core engineering to product evoution and support.",
       icon: Code,
       href: siteConfig.page.CustomSoftwareDevelopment,
-      imageSrc: "https://www.perfectiongeeks.com/image/top-custom-software-companies.webp",
+      imageSrc: "/assets/images/CSD.webp",
       imageAlt: "Custom Software Development"
     },
     {
@@ -89,7 +89,7 @@ export default function Services({ className }: { className?: string }) {
       description: "A complete, end-to-end upgrade of how your business runs - replacing outdated manual systems with intelligent, automated infrastructure",
       icon: TrendingUp,
       href: siteConfig.page.DigitalTransformation,
-      imageSrc: "https://cdn.scopicsoftware.com/wp-content/uploads/2024/08/custom-software-development-companies.webp",
+      imageSrc: "/assets/images/SDT.webp",
       imageAlt: "Scalable Digital Transformation"
     }
   ];

@@ -42,7 +42,7 @@ export default function Hero({
       icon: <CalendarCheck className="mr-2 h-4 w-4" />,
     },
   ],
-  imageSrc = "https://www.adaptiv-networks.com/wp-content/uploads/2024/03/Branch-Office-1024x938.png",
+  imageSrc = "/assets/images/CSD_Avtar.webp",
   imageAlt = "Hero illustration",
   className,
 }: HeroProps) {

@@ -42,7 +42,7 @@ export default function Hero({
       icon: <CalendarCheck className="mr-2 h-4 w-4" />,
     },
   ],
-  imageSrc = "https://f1.madcapsoftware.com/websiteImages/illustrations/ill-IXIACCMS-hero1.png",
+  imageSrc = "/assets/images/AI_Avtar.avif",
   imageAlt = "Hero illustration",
   className,
 }: HeroProps) {
