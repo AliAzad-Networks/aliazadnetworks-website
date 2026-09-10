@@ -18,44 +18,44 @@ export default function FeatureGridAlt({ className }: { className?: string }) {
   const features = [
     {
       icon: <ShieldCheck className="w-5 h-5" />,
-      title: "First service, then full payment",
-      description: "50% advance only. Final payment after you're satisfied. No Surprise Bills. Ever",
+      title: "Business-First Approach",
+      description: "We begin with your business objective, not the technology. Every solution is designed around your requirements, users, processes, and long-term goals.",
     },
     {
       icon: <BadgePercent className="w-5 h-5" />,
-      title: "100% money-back guarantee ",
-      description: "If we fail to deliver as agreed, you get a full refund. No conditions. In writing.",
+      title: "Enterprise-Grade Engineering",
+      description: "We build with modern technologies, scalable architecture, security best practices, and maintainable engineering standards.",
       active: true,
     },
     {
       icon: <CodeXml className="w-5 h-5" />,
-      title: "You own all the code",
-      description: "Full source code on GitHub. No watermarks, no locks, no \"rent the code\" model. Yours forever.",
+      title: "Complete Ownership",
+      description: "Your technology belongs to you. You receive the source code, documentation, and necessary project assets without vendor lock-in.",
     },
     {
       icon: <FileText className="w-5 h-5" />,
-      title: "Bank-Level Security & ISO Compliance",
-      description: "Your data is protected with enterprise-grade encryption, ISO 27001 standards, and strict NDAs.",
+      title: "Security by Design",
+      description: "We follow disciplined practices for data protection, access control, secure development, and responsible handling of business information.",
     },
     {
       icon: <MessageCircle className="w-5 h-5" />,
-      title: "24/7 WhatsApp support",
-      description: "Communicate directly with our team anytime through WhatsApp for quick responses and updates.",
+      title: "Transparent Delivery",
+      description: "From scope and milestones to progress and delivery, we maintain clear communication throughout the engagement.",
     },
     {
       icon: <Shield className="w-5 h-5" />,
-      title: "DPIIT certified company",
-      description: "Officially recognised startup. You get proper invoice, agreement, and legal protection.",
+      title: "Dedicated Expertise",
+      description: "Your project receives focused attention from experienced engineers and project leadership. The right people stay aligned with your objectives through delivery.",
     },
     {
       icon: <UserRoundCog className="w-5 h-5" />,
-      title: "Dedicated Project Manager",
-      description: "A dedicated project manager ensures smooth communication and timely delivery of your project.",
+      title: "Built to Scale",
+      description: "We build our technology solutions to be designed with future users, integrations, features, performance, and business growth in mind.",
     },
     {
       icon: <KanbanSquare className="w-5 h-5" />,
-      title: "30-Day Free Maintenance",
-      description: "Free bug fixes, security updates, and priority support for 30 days after delivery.",
+      title: "Long-Term Technology Partnership",
+      description: "Our relationship does not end at deployment. We aim to become a trusted technology partner that continues to help your business improve, and automate",
     },
   ];
 
