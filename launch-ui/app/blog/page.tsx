@@ -20,8 +20,8 @@ export default function BlogListingPage() {
       {/* Banner-style Header */}
       <section className="relative w-full overflow-hidden bg-[#f9f7f4] border-b border-border">
         {/* Background Blurs */}
-        <div className="absolute pointer-events-none top-10 -z-0 left-20 size-64 bg-gradient-to-br from-[#F8F4F0] to-[#F046FF] blur-[180px] opacity-70" />
-        <div className="absolute pointer-events-none bottom-10 -z-0 right-20 size-64 bg-gradient-to-br from-[#F8F4F0] to-[#F8F4F0] blur-[180px] opacity-70" />
+        <div className="absolute pointer-events-none top-10 -z-0 left-20 size-64 bg-gradient-to-br from-[#EAF5FE] to-[#F5FAFF] blur-[180px] opacity-70" />
+        <div className="absolute pointer-events-none bottom-10 -z-0 right-20 size-64 bg-gradient-to-br from-[#F5FAFF] to-[#EAF5FE] blur-[180px] opacity-70" />
 
         <div className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 z-10">
           <div className="max-w-2xl">
