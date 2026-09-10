@@ -18,19 +18,19 @@ export default function FeatureCards({ className }: { className?: string }) {
       image: "https://media.istockphoto.com/id/1419539600/photo/business-presentation-and-man-on-a-laptop-in-a-corporate-conference-or-office-collaboration.jpg?s=612x612&w=0&k=20&c=viDl-Gtp68kqaCeh0WbnqM0EERvGec4i5C_Vk84VHKE=",
       title: "Our mission and values",
       description: "Our values of impact, aspiration and trust make us who we are and guide everything we do.",
-      href: siteConfig.page.AiProcessAutomation || "/features/feedback-analyser",
+      href: siteConfig.page.about || "/features/feedback-analyser",
     },
     {
       image: "https://proficloud.io/wp-content/uploads/2023/07/Proficloud-DMS-Basic-Add-on-Newsblog-1024x682.jpg",
       title: "Smart user management",
       description: "Manage users, roles, and permissions with ease using our intuitive user management system.",
-      href: siteConfig.page.AiProcessAutomation || "/features/user-management",
+      href: siteConfig.page.about || "/features/user-management",
     },
     {
       image: "https://careers.expediagroup.com/wp-content/uploads/2024/06/230614-owenbphoto-ExpediaIBG-Group-0015770-scaled.jpg",
       title: "Our inclusive community",
       description: "From our vibrant employee to our trailblazing pay gap report where everyone can thrive.",
-      href: siteConfig.page.AiProcessAutomation || "/features/better-invoicing",
+      href: siteConfig.page.about || "/features/better-invoicing",
     },
   ];
 
