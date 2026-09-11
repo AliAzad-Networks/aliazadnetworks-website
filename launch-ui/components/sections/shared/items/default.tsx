@@ -33,7 +33,7 @@ export default function FeatureGridAlt({ className }: { className?: string }) {
       description: "Your technology belongs to you. You receive the source code, documentation, and necessary project assets without vendor lock-in.",
     },
     {
-      icon: <FileText className="w-5 h-5" />,
+      icon: <Shield className="w-5 h-5" />,
       title: "Security by Design",
       description: "We follow disciplined practices for data protection, access control, secure development, and responsible handling of business information.",
     },
@@ -43,7 +43,7 @@ export default function FeatureGridAlt({ className }: { className?: string }) {
       description: "From scope and milestones to progress and delivery, we maintain clear communication throughout the engagement.",
     },
     {
-      icon: <Shield className="w-5 h-5" />,
+      icon: <FileText className="w-5 h-5" />,
       title: "Dedicated Expertise",
       description: "Your project receives focused attention from experienced engineers and project leadership. The right people stay aligned with your objectives through delivery.",
     },
