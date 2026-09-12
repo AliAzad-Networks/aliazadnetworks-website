@@ -18,7 +18,11 @@ function Divider() {
   return <hr className="my-12 border-border" />;
 }
 
-function CodeBlock({ children, className, ...props }: React.HTMLAttributes<HTMLPreElement>) {
+function CodeBlock({
+  children,
+  className,
+  ...props
+}: React.HTMLAttributes<HTMLPreElement>) {
   return (
     <pre
       className={`my-6 overflow-x-auto rounded-xl border border-border bg-muted/40 p-4 text-sm leading-relaxed ${className ?? ""}`}
@@ -35,25 +39,43 @@ function CodeBlock({ children, className, ...props }: React.HTMLAttributes<HTMLP
 
 export const mdxComponents: MDXComponents = {
   h1: (props) => (
-    <h1 className="mt-12 mb-4 text-3xl font-bold tracking-tight text-foreground" {...props} />
+    <h1
+      className="group mt-12 mb-4 scroll-mt-24 text-3xl font-bold tracking-tight text-foreground"
+      {...props}
+    />
   ),
   h2: (props) => (
-    <h2 className="mt-10 mb-3 text-2xl font-semibold tracking-tight text-foreground" {...props} />
+    <h2
+      className="group mt-10 mb-3 scroll-mt-24 text-2xl font-semibold tracking-tight text-foreground"
+      {...props}
+    />
   ),
   h3: (props) => (
-    <h3 className="mt-8 mb-2 text-xl font-semibold text-foreground" {...props} />
+    <h3
+      className="group mt-8 mb-2 scroll-mt-24 text-xl font-semibold text-foreground"
+      {...props}
+    />
   ),
   h4: (props) => (
-    <h4 className="mt-6 mb-2 text-lg font-semibold text-foreground" {...props} />
+    <h4
+      className="group mt-6 mb-2 scroll-mt-24 text-lg font-semibold text-foreground"
+      {...props}
+    />
   ),
   p: (props) => (
     <p className="my-4 text-base leading-7 text-muted-foreground" {...props} />
   ),
   ul: (props) => (
-    <ul className="my-4 ml-6 list-disc space-y-2 text-muted-foreground" {...props} />
+    <ul
+      className="my-4 ml-6 list-disc space-y-2 text-muted-foreground"
+      {...props}
+    />
   ),
   ol: (props) => (
-    <ol className="my-4 ml-6 list-decimal space-y-2 text-muted-foreground" {...props} />
+    <ol
+      className="my-4 ml-6 list-decimal space-y-2 text-muted-foreground"
+      {...props}
+    />
   ),
   li: (props) => <li className="leading-7" {...props} />,
   blockquote: (props) => (
@@ -64,19 +86,40 @@ export const mdxComponents: MDXComponents = {
   ),
   a: ({ href = "", children, ...props }) => {
     const isInternal = href.startsWith("/") || href.startsWith("#");
+
+    const linkClasses =
+      "text-primary underline decoration-primary/30 underline-offset-4 transition hover:decoration-primary";
+
+    // 👇 Anchor links appended to headings — no underline, hidden until hover
+    const isHeadingAnchor =
+      typeof props.className === "string" && props.className.includes("anchor");
+
+    if (isHeadingAnchor) {
+      return (
+        <Link
+          href={href}
+          className="ml-2 text-muted-foreground/40 opacity-0 transition-opacity group-hover:opacity-100 hover:text-primary"
+          aria-label="Anchor link"
+        >
+          #
+        </Link>
+      );
+    }
+
     if (isInternal) {
       return (
-        <Link href={href} className="text-primary underline underline-offset-4 hover:opacity-80">
+        <Link href={href} className={linkClasses}>
           {children}
         </Link>
       );
     }
+
     return (
       <a
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        className="text-primary underline underline-offset-4 hover:opacity-80"
+        className={linkClasses}
         {...props}
       >
         {children}
