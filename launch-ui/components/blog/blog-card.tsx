@@ -46,11 +46,22 @@ export function BlogCard({ post, priority = false }: BlogCardProps) {
         </p>
 
         <div className="mt-auto flex items-center justify-between pt-4 text-xs text-muted-foreground">
-          <span>{post.author}</span>
-          <time dateTime={post.date}>
-            {formatDate(post.date)} · {post.readingTime}
-          </time>
-        </div>
+            <div className="flex items-center gap-2">
+                {post.authorImage && (
+                <Image
+                    src={post.authorImage}
+                    alt={post.author}
+                    width={24}
+                    height={24}
+                    className="h-6 w-6 rounded-full object-cover"
+                />
+                )}
+                <span>{post.author}</span>
+            </div>
+            <time dateTime={post.date}>
+                {formatDate(post.date)} · {post.readingTime}
+            </time>
+            </div>
       </div>
     </Link>
   );

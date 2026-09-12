@@ -1,4 +1,6 @@
 import type { BlogPost } from "@/lib/blog";
+import Image from "next/image";
+
 
 function formatDate(iso: string): string {
   return new Date(iso).toLocaleDateString("en-US", {
@@ -33,8 +35,19 @@ export function BlogHeader({ post }: { post: BlogPost }) {
         {post.description}
       </p>
 
-      <div className="mt-6 flex flex-wrap items-center gap-x-3 gap-y-1 border-y border-border py-4 text-sm text-muted-foreground">
-        <span className="font-medium text-foreground">{post.author}</span>
+      <div className="mt-6 flex flex-wrap items-center gap-x-3 gap-y-3 border-y border-border py-4 text-sm text-muted-foreground">
+        <div className="flex items-center gap-3">
+          {post.authorImage && (
+            <Image
+              src={post.authorImage}
+              alt={post.author}
+              width={40}
+              height={40}
+              className="h-7 w-7 rounded-full object-cover border border-border"
+            />
+          )}
+          <span className="font-medium text-foreground">{post.author}</span>
+        </div>
         <span aria-hidden>·</span>
         <time dateTime={post.date}>{formatDate(post.date)}</time>
         <span aria-hidden>·</span>

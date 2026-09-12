@@ -9,7 +9,8 @@ import matter from "gray-matter";
 export interface BlogFrontmatter {
   title: string;
   description: string;
-  date: string;               // ISO 8601 → "2026-09-11"
+  date: string;  
+  authorImage?: string;             // ISO 8601 → "2026-09-11"
   author: string;
   category: string;
   cover: string;              // e.g. "/assets/images/blog/cover.jpg"
@@ -87,6 +88,7 @@ export function getAllPosts(): BlogPostMeta[] {
       description: requireString(data.description, "description", file),
       date: requireString(data.date, "date", file),
       author: requireString(data.author, "author", file),
+      authorImage: typeof data.authorImage === "string" ? data.authorImage : undefined,
       category: requireString(data.category, "category", file),
       cover: requireString(data.cover, "cover", file),
       tags: Array.isArray(data.tags) ? data.tags : [],
@@ -121,6 +123,7 @@ export function getPostBySlug(slug: string): BlogPost | null {
     description: requireString(data.description, "description", `${slug}.mdx`),
     date: requireString(data.date, "date", `${slug}.mdx`),
     author: requireString(data.author, "author", `${slug}.mdx`),
+    authorImage: typeof data.authorImage === "string" ? data.authorImage : undefined,
     category: requireString(data.category, "category", `${slug}.mdx`),
     cover: requireString(data.cover, "cover", `${slug}.mdx`),
     tags: Array.isArray(data.tags) ? data.tags : [],

@@ -12,6 +12,7 @@ export const metadata = {
 
 export default function BlogListingPage() {
   const posts = getAllPosts();
+  
 
   return (
     <main className="bg-white text-foreground min-h-screen w-full">
