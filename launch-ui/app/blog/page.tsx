@@ -26,7 +26,7 @@ export default function BlogListingPage() {
 
         <div className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 z-10">
           <div className="max-w-2xl">
-            <h1 className="text-4xl font-bold tracking-tight text-foreground">
+            <h1 className="text-4xl text-foreground">
               AliAzad Networks Developer Blogs
             </h1>
             <p className="mt-3 text-base text-muted-foreground">
