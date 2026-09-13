@@ -38,7 +38,7 @@ export default function HeroAlt({ className }: HeroAltProps) {
         className
       )}
     >
-      <div className="max-w-container mx-auto px-4">
+      <div className="max-w-container mx-auto px-8">
         {/* Status Badge */}
         <div className="flex items-center justify-center mb-8">
           <div className="flex items-center gap-2 pl-2 pr-4 py-1.5 rounded-full bg-white/50 dark:bg-card/50 border border-border backdrop-blur-sm">
@@ -61,7 +61,7 @@ export default function HeroAlt({ className }: HeroAltProps) {
         </p>
 
         {/* CTA Buttons */}
-        <div className="flex gap-3 justify-center mt-8">
+        <div className="flex flex-col sm:flex-row gap-3 justify-center mt-8 px-2 sm:px-0">
           <Button asChild size="lg" className="px-6 py-3 rounded-lg">
             <Link href={siteConfig.page.casestudies}>Explore Case Studies</Link>
           </Button>

@@ -70,7 +70,7 @@ export default function TestimonialsGrid() {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="mb-10 text-center md:text-left">
-          <h2 className="text-4xl font-medium text-neutral-800 dark:text-neutral-100">
+          <h2 className="text-4xl text-neutral-800 dark:text-neutral-100">
             Our Testimonials
           </h2>
           <p className="text-base text-neutral-600 dark:text-neutral-400 max-w-6xl mt-2 mx-auto md:mx-0">
