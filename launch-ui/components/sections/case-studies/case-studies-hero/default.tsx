@@ -51,7 +51,7 @@ export default function HeroAlt({ className }: HeroAltProps) {
         </div>
 
         {/* Headline */}
-        <h1 className="text-3xl md:text-4xl leading-tight text-center max-w-3xl mx-auto font-medium text-foreground">
+        <h1 className="text-3xl md:text-4xl leading-tight text-center max-w-3xl mx-auto text-foreground">
           See How Businessess Are Scaling With AliAzad Networks
         </h1>
         
@@ -77,7 +77,7 @@ export default function HeroAlt({ className }: HeroAltProps) {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-12 max-w-[930px] mx-auto w-full">
           {stats.map((stat, index) => (
             <div key={index} className="text-center">
-              <h2 className="font-medium text-2xl md:text-3xl text-foreground">
+              <h2 className="text-2xl md:text-3xl text-foreground">
                 {stat.value}
               </h2>
               <p className="text-xs md:text-sm text-muted-foreground">

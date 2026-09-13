@@ -30,7 +30,7 @@ export default function TestimonialCards({ className }: { className?: string }) 
       <div className="max-w-container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
+          <h2 className="text-2xl md:text-3xl text-foreground mb-4">
             What Our Clients Say
           </h2>
           <p className="text-black max-w-3xl mx-auto">

@@ -18,7 +18,7 @@ export default function About({
 }: AboutProps) {
   const features = [
     {
-      emoji: "⚡",
+      
       title: "Innovation-Driven Development",
       description: "Modern technologies and AI-powered solutions built for scalability and performance.",
       bgColor: "bg-amber-50",
@@ -26,7 +26,6 @@ export default function About({
       textColor: "text-amber-600",
     },
     {
-      emoji: "🔒",
       title: "Client-Focused Process",
       description: "Clear communication, regular updates, and complete source code ownership.",
       bgColor: "bg-indigo-50",
@@ -34,7 +33,6 @@ export default function About({
       textColor: "text-indigo-600",
     },
     {
-      emoji: "💡",
       title: "Results That Create Real Impact",
       description: "Delivering practical solutions that support growth, learning, and business success.",
       bgColor: "bg-emerald-50",
@@ -51,31 +49,12 @@ export default function About({
       <div className="max-w-container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-8">
-          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
+          <h2 className="text-2xl md:text-3xl text-foreground mb-4">
             {title}
           </h2>
           <p className="text-black text-sm max-w-3xl mx-auto">
             {description}
           </p>
-          {/* Trust Badges - moved outside <p> */}
-          <div className="flex flex-wrap justify-center gap-4 mt-6">
-            <div className="flex items-center gap-2">
-              <Check className="w-4 h-4 text-green-500" />
-              <span className="text-sm text-gray-800">DPIIT Registered Company</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Check className="w-4 h-4 text-green-500" />
-              <span className="text-sm text-gray-800">50+ Startups Served</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Check className="w-4 h-4 text-green-500" />
-              <span className="text-sm text-gray-800">6 Countries Served</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Check className="w-4 h-4 text-green-500" />
-              <span className="text-sm text-gray-800">AI-Powered Since Day One</span>
-            </div>
-          </div>
         </div>
 
         {/* Features Grid */}
@@ -88,13 +67,7 @@ export default function About({
                 index < 2 && "md:border-r"
               )}
             >
-              <div className={cn(
-                "w-12 h-12 p-2 rounded-lg flex items-center justify-center text-2xl",
-                feature.bgColor,
-                feature.borderColor
-              )}>
-                {feature.emoji}
-              </div>
+             
               <div className="mt-5 space-y-2">
                 <h3 className="text-base font-medium text-foreground">
                   {feature.title}

@@ -213,7 +213,7 @@ export default function Portfolio() {
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-8">
           <div className="max-w-6xl">
-            <h2 className="text-2xl md:text-3xl font-medium mb-3">AI Agents That Automate and Accelerate Growth.</h2>
+            <h2 className="text-2xl md:text-3xl mb-3">AI Agents That Automate and Accelerate Growth.</h2>
             <p className="text-black">
               Every project we deliver has the same 6-layer architecture. This is what makes our systems production-grade, not just demos.
             </p>

@@ -63,10 +63,10 @@ export default function Hero({
                     <p className="text-sm text-foreground">AI Driven Process Automation</p>
                 </div>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 text-foreground">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl mb-4 text-foreground">
               {title}<span className="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">What AI Can Do Automatically</span>
             </h1>
-            <p className="text-black text-lg mb-8 max-w-lg mx-auto md:mx-0">
+            <p className="mb-8 max-w-lg mx-auto md:mx-0">
               {description}
             </p>
             

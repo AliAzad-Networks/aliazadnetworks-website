@@ -27,7 +27,7 @@ interface HeroProps {
 
 export default function Hero({
   title = "We Build the Full Stack Software",
-  description = "Your startup idea deserves more than a template. We build custom software from scratch — with AI intelligence built in from day one — so your product is smarter, faster, and harder to compete with from launch.",
+  description = "Your startup idea deserves more than a template. We build custom software from scratch - with AI intelligence built in from day one - so your product is smarter, faster, and harder to compete with from launch.",
   buttons = [
     {
       href: siteConfig.getStartedUrl,
@@ -63,10 +63,10 @@ export default function Hero({
                     <p className="text-sm text-foreground">Custom Software Development</p>
                 </div>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 text-foreground">
-              {title}<span className="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">Your Startup Actually Needs</span>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl mb-4 text-foreground">
+              {title} <span className="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">Your Startup Actually Needs</span>
             </h1>
-            <p className="text-black text-lg mb-8 max-w-lg mx-auto md:mx-0">
+            <p className="mb-8 max-w-lg mx-auto md:mx-0">
               {description}
             </p>
             

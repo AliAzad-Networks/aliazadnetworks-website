@@ -66,7 +66,7 @@ export default function FeatureGrid({
         {/* Header */}
         <button className="inline-block text-xs text-foreground bg-card rounded-full px-4 py-1.5 mb-4 border border-border">What We Do</button>
         <div className="flex flex-col mb-12">
-          <h2 className="text-2xl md:text-3xl font-bold mb-4">{title}</h2>
+          <h2 className="text-2xl md:text-3xl mb-4">{title}</h2>
           <p className="text-black text-md">
             {description}
           </p>

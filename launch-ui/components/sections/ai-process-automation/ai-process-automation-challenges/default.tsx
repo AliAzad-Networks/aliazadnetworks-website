@@ -71,7 +71,7 @@ export default function FaqSection() {
         {/* Header - Now centered at the top */}
         <div className="mb-12">
           <p className="text-primary text-sm font-medium">Industries we serve</p>
-          <h2 className="text-2xl md:text-4xl font-md text-foreground leading-tight mt-1 max-w-xl">
+          <h2 className="text-2xl md:text-4xl text-foreground leading-tight mt-1 max-w-xl">
             Our capabilities are designed to solve your problems
           </h2>
         </div>
@@ -92,7 +92,7 @@ export default function FaqSection() {
                   >
                     <div className="flex items-center justify-between gap-4">
                       <h3 className={cn(
-                        "text-base font-medium flex items-center gap-2",
+                        "text-base flex items-center gap-2",
                         isOpen ? "text-primary" : "text-foreground",
                         "group-hover:text-primary"
                       )}>

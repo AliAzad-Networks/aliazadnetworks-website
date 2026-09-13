@@ -26,8 +26,8 @@ interface HeroProps {
 }
 
 export default function Hero({
-  title = "Transform How Your Business Operates — ",
-  description = "We design and build the AI infrastructure that lets your business scale its output without scaling its headcount — turning operational cost into a competitive advantage.",
+  title = "Transform How Your Business Operates - ",
+  description = "We design and build the AI infrastructure that lets your business scale its output without scaling its headcount - turning operational cost into a competitive advantage.",
   buttons = [
     {
       href: siteConfig.getStartedUrl,
@@ -63,10 +63,10 @@ export default function Hero({
                     <p className="text-sm text-foreground">Scalable Digital Transformation</p>
                 </div>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 text-foreground">
-              {title}<span className="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">With AI at Every Layer</span>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl mb-4 text-foreground">
+              {title} <span className="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">With AI at Every Layer</span>
             </h1>
-            <p className="text-black text-lg mb-8 max-w-lg mx-auto md:mx-0">
+            <p className="mb-8 max-w-lg mx-auto md:mx-0">
               {description}
             </p>
             
@@ -91,28 +91,6 @@ export default function Hero({
               </div>
             )}
           {/* Trust Badges */}
-            <div className="flex flex-wrap justify-center md:justify-start gap-4 mt-8">
-                <div className="flex items-center gap-2">
-                    <Check className="w-4 h-4 text-green-500" />
-                    <span className="text-sm text-muted-foreground">Strategy</span>
-                </div>
-                <div className="flex items-center gap-2">
-                    <Check className="w-4 h-4 text-green-500" />
-                    <span className="text-sm text-muted-foreground">Architecture</span>
-                </div>
-                <div className="flex items-center gap-2">
-                    <Check className="w-4 h-4 text-green-500" />
-                    <span className="text-sm text-muted-foreground">AWS / GCP</span>
-                </div>
-                <div className="flex items-center gap-2">
-                    <Check className="w-4 h-4 text-green-500" />
-                    <span className="text-sm text-muted-foreground">CI/CD</span>
-                </div>
-                <div className="flex items-center gap-2">
-                    <Check className="w-4 h-4 text-green-500" />
-                    <span className="text-sm text-muted-foreground">Full AI Stack</span>
-                </div>
-            </div>
           </div>
           
           {/* Right Side - Image */}

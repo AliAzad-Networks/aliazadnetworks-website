@@ -173,7 +173,7 @@ export default function FAQ({
   return (
     <Section className={className}>
       <div className="relative overflow-hidden py-16 md:py-24 max-w-container mx-auto flex flex-col items-center gap-8 px-8">
-        <h2 className="text-center text-3xl font-semibold sm:text-5xl">
+        <h2 className="text-center text-3xl sm:text-5xl">
           {title}
         </h2>
         {items !== false && items.length > 0 && (

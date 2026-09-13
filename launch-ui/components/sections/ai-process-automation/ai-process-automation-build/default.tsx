@@ -59,7 +59,7 @@ export default function FeatureGrid({
         {/* Header */}
         <button className="inline-block text-xs text-foreground bg-card rounded-full px-4 py-1.5 mb-4 border border-border">WHAT WE BUILD</button>
         <div className="flex flex-col mb-12">
-          <h2 className="text-2xl md:text-3xl font-bold mb-4">{title}</h2>
+          <h2 className="text-2xl md:text-3xl mb-4">{title}</h2>
           <p className="text-black text-md">
             {description}
           </p>
@@ -73,7 +73,7 @@ export default function FeatureGrid({
               className="group border border-border p-6 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 bg-card"
             >              
               {/* Title */}
-              <h3 className="text-lg font-semibold mb-2 text-foreground">
+              <h3 className="text-lg mb-2 text-foreground">
                 {feature.title}
               </h3>
               

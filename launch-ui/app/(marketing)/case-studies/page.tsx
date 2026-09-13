@@ -2,7 +2,7 @@ import Navbar from "@/components/sections/shared/navbar/default";
 import Footer from "@/components/sections/shared/footer/default"; 
 import CaseStudiesHero from "@/components/sections/case-studies/case-studies-hero/default";
 import AboutService from "@/components/sections/about/about-service/default";
-import CaseStudiesFeature from "@/components/sections/case-studies/case-studies-feature/default";
+// import CaseStudiesFeature from "@/components/sections/case-studies/case-studies-feature/default";
 import CaseStudiesResult from "@/components/sections/case-studies/case-studies-result/default";
 import CaseStudiesList from "@/components/sections/case-studies/case-studies-list/default";
 import CaseStudiesSteps from "@/components/sections/case-studies/case-studies-steps/default";
@@ -22,13 +22,13 @@ export default function CaseStudiesPage() {
       <Navbar />
       <CaseStudiesHero />
       <AboutService />
-      <CaseStudiesFeature />
+      {/* <CaseStudiesFeature /> */}
       <CaseStudiesResult />
       <CaseStudiesList />
-      <CaseStudiesSteps />
+      {/* <CaseStudiesSteps /> */}
       <CaseStudiesImpact />
       <CaseStudiesIndustries />
-      <CaseStudiesOutcome />
+      {/* <CaseStudiesOutcome /> */}
       <Cta />
       <Footer />
     </main>

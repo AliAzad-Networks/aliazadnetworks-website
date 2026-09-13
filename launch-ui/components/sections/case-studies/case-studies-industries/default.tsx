@@ -63,7 +63,7 @@ export default function FeatureGridAlt({ className }: { className?: string }) {
       <div className="max-w-container mx-auto px-4">
         {/* Header */}
         <div className="mb-10">
-          <h1 className="text-2xl md:text-3xl font-medium text-foreground mb-4">
+          <h1 className="text-2xl md:text-3xl text-foreground mb-4">
             AI Automation Works Across Every Startup Industry
           </h1>
           <p className="text-sm text-muted-foreground">

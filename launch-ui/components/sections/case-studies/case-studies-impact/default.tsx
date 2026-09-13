@@ -24,7 +24,7 @@ export default function PricingTable({ className }: { className?: string }) {
       <div className="max-w-container mx-auto px-4">
         {/* Header */}
         <div className="mb-12">
-          <h1 className="text-2xl md:text-3xl font-medium text-foreground mb-4">
+          <h1 className="text-2xl md:text-3xl text-foreground mb-4">
             Before AI vs. After AI — The Actual Numbers
           </h1>
           <p className="text-sm text-muted-foreground">

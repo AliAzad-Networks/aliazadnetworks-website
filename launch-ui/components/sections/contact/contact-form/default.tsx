@@ -47,7 +47,7 @@ export default function ContactHero({ className }: { className?: string }) {
             </div>
             
             {/* Heading */}
-            <h1 className="text-2xl md:text-3xl lg:text-5xl font-bold mb-4">
+            <h1 className="text-2xl md:text-3xl lg:text-5xl mb-4">
               Ready to Transform Your{" "}
               <span className="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">
                 Technology Experience?

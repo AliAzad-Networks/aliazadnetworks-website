@@ -86,7 +86,7 @@ export default function TeamCarousel({ className }: { className?: string }) {
       <div className="max-w-container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-10">
-          <h1 className="text-2xl md:text-3xl font-bold text-foreground">
+          <h1 className="text-2xl md:text-3xl text-foreground">
             Meet Our Team
           </h1>
           <p className="text-base text-black max-w-md mx-auto mt-2">

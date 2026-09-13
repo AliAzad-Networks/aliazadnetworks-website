@@ -68,10 +68,10 @@ export default function FeatureCards({ className }: FeatureCardsProps) {
             <div>
                       <button className="inline-block text-xs text-foreground bg-card rounded-full px-4 py-1.5 mb-4 border border-border">Technology</button>
 
-              <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold text-foreground mb-4">
+              <h2 className="text-2xl md:text-3xl lg:text-5xl text-foreground mb-4">
                 The AI Stack We Build for <span className="text-primary">Startups</span>
               </h2>
-              <p className="text-black text-lg leading-relaxed">Every tool below has been used in production across our case studies. Not theoretical — tested and deployed in live startup environments.
+              <p className="leading-relaxed">Every tool below has been used in production across our case studies. Not theoretical — tested and deployed in live startup environments.
               </p>
             </div>
             
@@ -100,7 +100,7 @@ export default function FeatureCards({ className }: FeatureCardsProps) {
                 
                 {/* Text */}
                 <div>
-                  <h3 className="font-semibold text-foreground mb-1">
+                  <h3 className="text-foreground mb-1">
                     {feature.title}
                   </h3>
                   <p className="text-sm text-muted-foreground gap-2 mt-2 flex flex-wrap">

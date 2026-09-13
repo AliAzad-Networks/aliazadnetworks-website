@@ -53,7 +53,7 @@ export default function TestimonialsGridAlt({ className }: { className?: string 
       <div className="max-w-container mx-auto px-4">
         {/* Header */}
         <div className="mb-10">
-          <h1 className="text-2xl md:text-3xl font-medium text-center md:text-left mb-3">
+          <h1 className="text-2xl md:text-3xl text-center md:text-left mb-3">
             What Our Clients Say
           </h1>
           <p className="text-sm text-center md:text-left mx-auto md:mx-0">

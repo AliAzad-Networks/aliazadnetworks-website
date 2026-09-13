@@ -49,7 +49,7 @@ export default function ProcessHorizontal({ className }: ProcessHorizontalProps)
       <div className="max-w-container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
+          <h2 className="text-2xl md:text-3xl text-foreground mb-4">
             How We Deliver Your Product
           </h2>
           <p className="text-black text-md max-w-2xl mx-auto">

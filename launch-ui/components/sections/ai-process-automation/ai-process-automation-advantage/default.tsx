@@ -63,7 +63,7 @@ export default function FeatureCards({ className }: FeatureCardsProps) {
                 
                 {/* Text */}
                 <div>
-                  <h3 className="font-semibold text-foreground mb-1">
+                  <h3 className="text-foreground mb-1">
                     {feature.title}
                   </h3>
                   <p className="text-sm text-muted-foreground">

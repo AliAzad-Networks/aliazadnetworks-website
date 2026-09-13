@@ -28,7 +28,7 @@ export default function HeroAI({ className }: { className?: string }) {
             </div>
 
             {/* Title */}
-            <h1 className="text-center md:text-left text-4xl md:text-5xl lg:text-6xl leading-tight font-medium  max-w-xl mt-4">
+            <h1 className="text-center md:text-left text-4xl md:text-5xl lg:text-6xl leading-tight max-w-xl mt-4">
               Intelligent AI-Drivien Process Automation Built to Help You Succeed.
             </h1>
 
