@@ -53,16 +53,6 @@ export default function Hero({
           
           {/* Left Side - Content */}
           <div className="flex flex-col items-center md:items-start flex-1">
-            {/* Badge */}
-            <div className="flex items-center justify-center mb-8">
-                <div className="flex items-center gap-2 pl-2 pr-4 py-1.5 rounded-full bg-white/50 dark:bg-card/50 border border-border backdrop-blur-sm">
-                    <div className="relative flex size-3.5 items-center justify-center">
-                    <span className="absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75 animate-ping duration-300"></span>
-                    <span className="relative inline-flex size-2 rounded-full bg-green-600"></span>
-                    </div>
-                    <p className="text-sm text-foreground">AI Driven Process Automation</p>
-                </div>
-            </div>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl mb-4 text-foreground">
               {title}<span className="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">What AI Can Do Automatically</span>
             </h1>

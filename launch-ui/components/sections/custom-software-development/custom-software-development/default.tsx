@@ -53,16 +53,6 @@ export default function Hero({
           
           {/* Left Side - Content */}
           <div className="flex flex-col items-center md:items-start flex-1">
-            {/* Badge */}
-            <div className="flex items-center justify-center mb-8">
-                <div className="flex items-center gap-2 pl-2 pr-4 py-1.5 rounded-full bg-white/50 dark:bg-card/50 border border-border backdrop-blur-sm">
-                    <div className="relative flex size-3.5 items-center justify-center">
-                    <span className="absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75 animate-ping duration-300"></span>
-                    <span className="relative inline-flex size-2 rounded-full bg-green-600"></span>
-                    </div>
-                    <p className="text-sm text-foreground">Custom Software Development</p>
-                </div>
-            </div>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl mb-4 text-foreground">
               {title} <span className="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">Your Startup Actually Needs</span>
             </h1>
@@ -89,29 +79,6 @@ export default function Hero({
                 ))}
               </div>
             )}
-          {/* Trust Badges */}
-            <div className="flex flex-wrap justify-center md:justify-start gap-4 mt-8">
-                <div className="flex items-center gap-2">
-                    <Check className="w-4 h-4 text-green-500" />
-                    <span className="text-sm text-muted-foreground">GPT-4o</span>
-                </div>
-                <div className="flex items-center gap-2">
-                    <Check className="w-4 h-4 text-green-500" />
-                    <span className="text-sm text-muted-foreground">Python / FastAPI</span>
-                </div>
-                <div className="flex items-center gap-2">
-                    <Check className="w-4 h-4 text-green-500" />
-                    <span className="text-sm text-muted-foreground">OpenAI API</span>
-                </div>
-                <div className="flex items-center gap-2">
-                    <Check className="w-4 h-4 text-green-500" />
-                    <span className="text-sm text-muted-foreground">React</span>
-                </div>
-                <div className="flex items-center gap-2">
-                    <Check className="w-4 h-4 text-green-500" />
-                    <span className="text-sm text-muted-foreground">AWS / GCP</span>
-                </div>
-            </div>
           </div>
           
           {/* Right Side - Image */}

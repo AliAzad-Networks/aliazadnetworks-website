@@ -28,7 +28,7 @@ export default function FeatureGrid({
   features = [
     {
       icon: <Zap className="w-6 h-6" />,
-      title: "AI-Powered Custom Application Development",
+      title: "AI-Powered Application Development",
       description: "AI-assisted coding, debugging, and CI/CD automation accelerate development, detect defects earlier, and ensure seamless, high-performance deployments.",
     },
     {
@@ -79,10 +79,7 @@ export default function FeatureGrid({
               key={index}
               className="group border border-border p-6 hover:shadow-lg bg-card"
             >
-              {/* Icon */}
-              <div className="w-12 h-12 bg-primary/10 flex items-center justify-center text-primary mb-5 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
-                {feature.icon}
-              </div>
+              
               
               {/* Title */}
               <h3 className="text-lg font-semibold mb-2 text-foreground">

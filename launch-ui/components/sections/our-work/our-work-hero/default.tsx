@@ -16,16 +16,7 @@ export default function HeroAI({ className }: { className?: string }) {
           
           {/* Left Side */}
           <div className="flex flex-col items-center md:items-start flex-1">
-            {/* Badge */}
-            <div className="flex items-center justify-center mb-8">
-                <div className="flex items-center gap-2 pl-2 pr-4 py-1.5 rounded-full bg-white/50 dark:bg-card/50 border border-border backdrop-blur-sm">
-                    <div className="relative flex size-3.5 items-center justify-center">
-                    <span className="absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75 animate-ping duration-300"></span>
-                    <span className="relative inline-flex size-2 rounded-full bg-green-600"></span>
-                    </div>
-                    <p className="text-sm text-foreground">50+ AI systems built & deployed · Startups & Entrepreneurs</p>
-                </div>
-            </div>
+           
 
             {/* Title */}
             <h1 className="text-center md:text-left text-4xl md:text-5xl lg:text-6xl leading-tight max-w-xl mt-4">

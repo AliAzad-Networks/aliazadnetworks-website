@@ -39,18 +39,7 @@ export default function HeroAlt({ className }: HeroAltProps) {
       )}
     >
       <div className="max-w-container mx-auto px-8">
-        {/* Status Badge */}
-        <div className="flex items-center justify-center mb-8">
-          <div className="flex items-center gap-2 pl-2 pr-4 py-1.5 rounded-full bg-white/50 dark:bg-card/50 border border-border backdrop-blur-sm">
-            <div className="relative flex size-3.5 items-center justify-center">
-              <span className="absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75 animate-ping duration-300"></span>
-              <span className="relative inline-flex size-2 rounded-full bg-green-600"></span>
-            </div>
-            <p className="text-sm text-foreground/80">Remarkable results for every size business</p>
-          </div>
-        </div>
-
-        {/* Headline */}
+       {/* Headline */}
         <h1 className="text-3xl md:text-4xl leading-tight text-center max-w-3xl mx-auto text-foreground">
           See How Businessess Are Scaling With AliAzad Networks
         </h1>
