@@ -26,10 +26,10 @@ export default function BlogListingPage() {
 
         <div className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 z-10">
           <div className="max-w-2xl">
-            <h1 className="text-4xl text-foreground">
+            <h1 className="text-4xl bg-clip-text text-transparent bg-gradient-to-r from-orange-400 to-orange-600">
               AliAzad Networks Developer Blogs
             </h1>
-            <p className="mt-3 text-base text-muted-foreground">
+            <p className="mt-3 bg-clip-text text-transparent bg-gradient-to-r from-orange-400 to-orange-600">
               Stories about our people, our work, and the impact we're building
             </p>
           </div>
