@@ -45,7 +45,7 @@ export default function ProcessHorizontal({ className }: ProcessHorizontalProps)
   ];
 
   return (
-    <Section className={cn("py-16 md:py-24 bg-background", className)}>
+    <Section className={cn("py-16 md:py-24 bg-white", className)}>
       <div className="max-w-container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12">

@@ -20,7 +20,7 @@ export default function About({
     {
       
       title: "Innovation-Driven Development",
-      description: "Modern technologies and AI-powered solutions built for scalability and performance.",
+      description: "Modern technologies and AI-powered solutions built for scalability.",
       bgColor: "bg-amber-50",
       borderColor: "border-amber-200",
       textColor: "text-amber-600",
@@ -34,7 +34,7 @@ export default function About({
     },
     {
       title: "Results That Create Real Impact",
-      description: "Delivering practical solutions that support growth, learning, and business success.",
+      description: "Delivering practical solutions that support growth, and business success.",
       bgColor: "bg-emerald-50",
       borderColor: "border-emerald-200",
       textColor: "text-emerald-600",

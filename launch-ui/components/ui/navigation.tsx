@@ -249,7 +249,7 @@ function ListItem({
           )}
           {...props}
         >
-          <div className="text-sm leading-none font-medium">{title}</div>
+          <div className="text-sm leading-none">{title}</div>
           <p className="text-muted-foreground line-clamp-2 text-sm leading-snug">
             {children}
           </p>

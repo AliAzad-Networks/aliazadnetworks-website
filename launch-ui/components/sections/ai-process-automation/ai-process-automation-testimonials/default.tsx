@@ -26,7 +26,7 @@ export default function TestimonialCards({ className }: { className?: string }) 
   ];
 
   return (
-    <Section className={cn("py-16 md:py-24 bg-background px-8", className)}>
+    <Section className={cn("py-16 md:py-24 bg-white px-8", className)}>
       <div className="max-w-container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12">

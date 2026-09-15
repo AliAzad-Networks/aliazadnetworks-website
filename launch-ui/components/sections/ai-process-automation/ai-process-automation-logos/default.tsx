@@ -5,11 +5,11 @@ import { Section } from "@/components/ui/section";
 
 export default function MarqueeLogos({ className }: { className?: string }) {
   const logos = [
-    { name: "Tech Corp", logo: "https://vectorseek.com/wp-content/uploads/2023/12/SRM-Institute-of-Science-and-Technology-Logo-Vector.svg-.png" },
-    { name: "Startup X", logo: "https://chennai.vit.ac.in/wp-content/uploads/2021/08/vit_logo_colored.png" },
-    { name: "Innovate", logo: "https://e7.pngegg.com/pngimages/636/41/png-clipart-manipal-academy-of-higher-education-manipal-institute-of-technology-kasturba-medical-college-manipal-international-university-manipal-university-dubai-manipal-university.png" },
-    { name: "FutureSoft", logo: "https://qs-igauge.blr1.cdn.digitaloceanspaces.com/KCG%20College%20Logo.png" },
-    { name: "NextGen", logo: "https://crescent.mastersofterp.in/Images/DEFAULT_BG/default_logo1.png" },
+    { name: "Tech Corp", logo: "/assets/images/trusted/srm.png" },
+    { name: "Startup X", logo: "assets/images/trusted/vit.png" },
+    { name: "Innovate", logo: "/assets/images/trusted/manipal.png" },
+    { name: "FutureSoft", logo: "/assets/images/trusted/kcg.png" },
+    { name: "NextGen", logo: "/assets/images/trusted/crescent.png" },
   ];
 
   const duplicatedLogos = [...logos, ...logos];

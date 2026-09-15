@@ -27,7 +27,7 @@ interface HeroProps {
 
 export default function Hero({
   title = "Stop Doing Manually ",
-  description = "We map your most time-consuming manual processes, then build AI systems that handle them automatically 24/7, with zero errors and no extra headcount.",
+  description = "We map your most time-consuming manual processes, then build AI systems that handle them automatically.",
   buttons = [
     {
       href: siteConfig.getStartedUrl,

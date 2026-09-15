@@ -66,7 +66,7 @@ export default function FaqSection() {
   const currentImageAlt = openIndex !== null ? faqs[openIndex].imageAlt : faqs[0].imageAlt;
 
   return (
-    <Section className="py-16 md:py-24 bg-background">
+    <Section className="py-16 md:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header - Now centered at the top */}
         <div className="mb-12">
@@ -94,7 +94,7 @@ export default function FaqSection() {
                       <h3 className={cn(
                         "text-base flex items-center gap-2",
                         isOpen ? "text-primary" : "text-foreground",
-                        "group-hover:text-primary"
+                        "group-hover:text-primary group-hover:underline"
                       )}>
                         <IconComponent className="w-5 h-5" />
                         {faq.question}

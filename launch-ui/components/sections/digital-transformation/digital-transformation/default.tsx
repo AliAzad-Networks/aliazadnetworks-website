@@ -27,7 +27,7 @@ interface HeroProps {
 
 export default function Hero({
   title = "Transform How Your Business Operates - ",
-  description = "We design and build the AI infrastructure that lets your business scale its output without scaling its headcount - turning operational cost into a competitive advantage.",
+  description = "We design and build the AI infrastructure that lets your business scale its output without scaling its headcount.",
   buttons = [
     {
       href: siteConfig.getStartedUrl,

@@ -27,7 +27,7 @@ interface HeroProps {
 
 export default function Hero({
   title = "We Build the Full Stack Software",
-  description = "Your startup idea deserves more than a template. We build custom software from scratch - with AI intelligence built in from day one - so your product is smarter, faster, and harder to compete with from launch.",
+  description = "Your startup idea deserves more than a template. We build custom software from scratch.",
   buttons = [
     {
       href: siteConfig.getStartedUrl,
