@@ -67,7 +67,7 @@ export default function FeatureGridAlt({ className }: { className?: string }) {
             AI Automation Works Across Every Startup Industry
           </h1>
           <p className="text-sm text-muted-foreground">
-            We have delivered AI automation projects for startups in 6 industries. If your business has repetitive tasks — AI can eliminate them.
+            We have delivered AI automation projects for startups in 6 industries. If your business has repetitive tasks - AI can eliminate them.
           </p>
         </div>
 

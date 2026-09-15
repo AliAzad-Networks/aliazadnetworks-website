@@ -50,7 +50,7 @@ export default function FeatureList({ className }: { className?: string }) {
         {/* Header */}
         <div className="mb-12">
           <h1 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-            YouTube Channel AI Automation — Full Pipeline
+            YouTube Channel AI Automation - Full Pipeline
           </h1>
           <p className="text-black text-base mx-auto">
             Faizan Khan runs Mission Market, a YouTube channel focused on business and marketing with over 150,000 subscribers. His biggest bottleneck was not content quality - it was the 30+ hours every week consumed by manual, repetitive operational tasks that required no real creativity but consumed all his time.

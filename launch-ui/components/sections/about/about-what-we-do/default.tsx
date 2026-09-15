@@ -82,13 +82,13 @@ export default function WhatWeDo({ className }: { className?: string }) {
                 AliAzad Networks was founded in Bangalore, Karnataka with one observation: Entrepreneurs across India were full of ambition but had no reliable, affordable partner to help them build real technology projects.
               </p>
               <p>
-                India is on the verge of its largest technology transformation since the IT boom of the 2000s — except this time, it is powered by artificial intelligence. By 2030, India's AI market is projected to exceed $17 billion. The companies, products, and graduates who build AI fluency today will own that future.
+                India is on the verge of its largest technology transformation since the IT boom of the 2000s - except this time, it is powered by artificial intelligence. By 2030, India's AI market is projected to exceed $17 billion. The companies, products, and graduates who build AI fluency today will own that future.
               </p>
               <p> 
-                We made a deliberate choice in 2024: to position AliAzad Networks not as a general software shop, but as a specialist AI engineering company. Every service we offer — from a B.Tech project to a SaaS platform to a research paper — is designed with AI at its core.
+                We made a deliberate choice in 2024: to position AliAzad Networks not as a general software shop, but as a specialist AI engineering company. Every service we offer - from a B.Tech project to a SaaS platform to a research paper - is designed with AI at its core.
               </p>
               <p>
-                This means our Scalable Digital Transformation score higher because they implement real machine learning. Our startup products grow faster because they are intelligent from day one. Our research papers get accepted because they contribute genuine AI methodology — not recycled ideas.
+                This means our Scalable Digital Transformation score higher because they implement real machine learning. Our startup products grow faster because they are intelligent from day one. Our research papers get accepted because they contribute genuine AI methodology - not recycled ideas.
               </p>
             </div>
             

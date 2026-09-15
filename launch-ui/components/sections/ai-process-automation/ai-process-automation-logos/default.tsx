@@ -18,7 +18,7 @@ export default function MarqueeLogos({ className }: { className?: string }) {
     <Section className={cn("py-12 md:py-16 bg-background overflow-hidden", className)}>
       <div className="max-w-container mx-auto px-4">
         <h3 className="text-base text-center text-black pb-8 font-medium">
-          Trusted by leading brands, including —
+          Trusted by leading brands, including -
         </h3>
 
         <div className="overflow-hidden select-none">

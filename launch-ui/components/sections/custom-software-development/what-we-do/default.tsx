@@ -34,7 +34,7 @@ export default function FeatureGrid({
     {
       icon: <Users className="w-6 h-6" />,
       title: "Architecture, Stack & Infra Overhaul",
-      description: "For CTOs who won’t bolt AI onto broken systems — AliAzad’s Software Consulting rebuilds from first principles: clean architecture, modern stacks, infra built to scale and adapt.",
+      description: "For CTOs who won’t bolt AI onto broken systems - AliAzad’s Software Consulting rebuilds from first principles: clean architecture, modern stacks, infra built to scale and adapt.",
     },
     {
       icon: <Shield className="w-6 h-6" />,
@@ -49,7 +49,7 @@ export default function FeatureGrid({
     {
       icon: <Cpu className="w-6 h-6" />,
       title: "AI-Driven UI/UX Design",
-      description: "AI-powered behavioral analytics, automated testing, and predictive insights create intuitive, high-retention user experiences—optimized in real-time.",
+      description: "AI-powered behavioral analytics, automated testing, and predictive insights create intuitive, high-retention user experiences-optimized in real-time.",
     },
     {
       icon: <Code className="w-6 h-6" />,

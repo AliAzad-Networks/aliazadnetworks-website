@@ -61,7 +61,7 @@ export default function TestimonialCards({ className }: { className?: string }) 
                 <p className="font-medium text-foreground border-b border-border pb-4 flex-1">
                   "{item.quote}"
                 </p>
-                <p className="mt-4 text-black">— {item.name}</p>
+                <p className="mt-4 text-black">- {item.name}</p>
                 <p className="text-sm font-medium text-primary mt-1">
                   {item.category}
                 </p>

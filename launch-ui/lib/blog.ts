@@ -134,7 +134,7 @@ export function getPostBySlug(slug: string): BlogPost | null {
 }
 
 /**
- * Returns every slug — consumed by `generateStaticParams`
+ * Returns every slug - consumed by `generateStaticParams`
  * so Next.js prerenders all posts at build time.
  */
 export function getAllSlugs(): string[] {
@@ -146,7 +146,7 @@ export function getAllSlugs(): string[] {
 }
 
 /**
- * Returns posts grouped by category — useful for filter UIs.
+ * Returns posts grouped by category - useful for filter UIs.
  */
 export function getPostsByCategory(): Record<string, BlogPostMeta[]> {
   return getAllPosts().reduce<Record<string, BlogPostMeta[]>>((acc, post) => {

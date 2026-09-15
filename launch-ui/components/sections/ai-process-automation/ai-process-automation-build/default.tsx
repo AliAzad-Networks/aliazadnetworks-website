@@ -23,7 +23,7 @@ interface FeatureGridProps {
 
 export default function FeatureGrid({
   title = "End-to-End AI-Drivien Process Automation for Every Stage of Growth",
-  description = "From prototype to enterprise — we cover the full stack so you never need to hire multiple vendors.",
+  description = "From prototype to enterprise - we cover the full stack so you never need to hire multiple vendors.",
   features = [
     {
       title: "AI & Machine Learning Systems",

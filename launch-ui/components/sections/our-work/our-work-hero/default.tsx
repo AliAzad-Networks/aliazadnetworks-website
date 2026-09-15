@@ -25,7 +25,7 @@ export default function HeroAI({ className }: { className?: string }) {
 
             {/* Description */}
             <p className="text-center md:text-left text-sm text-slate-800 max-w-lg mt-4">
-              These are production AI systems we designed, engineered, and deployed for startups and entrepreneurs — with the real results they generated.
+              These are production AI systems we designed, engineered, and deployed for startups and entrepreneurs - with the real results they generated.
             </p>
 
             {/* Buttons */}

@@ -13,7 +13,7 @@ interface AboutProps {
 
 export default function About({
   title = "We Build Intelligent Software for India's Next Decade",
-  description = "AliAzad Networks is an AI-first technology company helping startups, and business build smarter — using the latest advances in artificial intelligence, machine learning, and modern software engineering.",
+  description = "AliAzad Networks is an AI-first technology company helping startups, and business build smarter - using the latest advances in artificial intelligence, machine learning, and modern software engineering.",
   className,
 }: AboutProps) {
   const features = [

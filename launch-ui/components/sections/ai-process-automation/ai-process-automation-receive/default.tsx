@@ -37,7 +37,7 @@ export default function FeatureGrid2({
     {
       icon: <Shield className="w-6 h-6" strokeWidth={1.5} />,
       title: "Complete Source Code",
-      description: "Clean, well-commented code on a private GitHub repository. Every file, every commit, every branch — transferred to your account.",
+      description: "Clean, well-commented code on a private GitHub repository. Every file, every commit, every branch - transferred to your account.",
       width: "half",
     },
     {

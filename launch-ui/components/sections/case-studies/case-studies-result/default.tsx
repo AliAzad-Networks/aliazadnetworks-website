@@ -71,13 +71,13 @@ export default function FeatureCards({ className }: FeatureCardsProps) {
               <h2 className="text-2xl md:text-3xl lg:text-5xl text-foreground mb-4">
                 The AI Stack We Build for <span className="text-primary">Startups</span>
               </h2>
-              <p className="leading-relaxed">Every tool below has been used in production across our case studies. Not theoretical — tested and deployed in live startup environments.
+              <p className="leading-relaxed">Every tool below has been used in production across our case studies. Not theoretical - tested and deployed in live startup environments.
               </p>
             </div>
             
             <div className="space-y-2">
               <div className="flex items-center gap-2">
-                <p className="text-sm text-muted-foreground">We choose the right tool for your problem — not the most impressive-sounding one. Sometimes GPT-4o is overkill. Sometimes a fine-tuned BERT model is faster, cheaper, and more accurate. We always optimise for your outcome, not our demo.
+                <p className="text-sm text-muted-foreground">We choose the right tool for your problem - not the most impressive-sounding one. Sometimes GPT-4o is overkill. Sometimes a fine-tuned BERT model is faster, cheaper, and more accurate. We always optimise for your outcome, not our demo.
 
 
 </p>

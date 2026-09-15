@@ -44,7 +44,7 @@ export default function OfferGrid({ className }: { className?: string }) {
             <div className="absolute bottom-5 left-5 z-20 w-[70%] lg:w-[50%]">
               <h4 className="text-lg font-semibold text-white">MVP Starter Package</h4>
               <p className="text-xs mt-2 text-white/90">
-                One focused feature built end-to-end — chatbot, automation script, dashboard, or API.
+                One focused feature built end-to-end - chatbot, automation script, dashboard, or API.
               </p>
               <Button
                 asChild
@@ -70,7 +70,7 @@ export default function OfferGrid({ className }: { className?: string }) {
             <div className="absolute bottom-4 left-4 z-20 w-[85%]">
               <h4 className="text-base font-semibold text-white">SaaS Product Development</h4>
               <p className="text-xs mt-1 text-white/90">
-                Multi-page product with full navigation, user flows, and database — not a single-screen tool.
+                Multi-page product with full navigation, user flows, and database - not a single-screen tool.
               </p>
               <Button
                 asChild

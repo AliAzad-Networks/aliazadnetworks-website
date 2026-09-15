@@ -90,7 +90,7 @@ export const mdxComponents: MDXComponents = {
     const linkClasses =
       "text-primary underline decoration-primary/30 underline-offset-4 transition hover:decoration-primary";
 
-    // 👇 Anchor links appended to headings — no underline, hidden until hover
+    // 👇 Anchor links appended to headings - no underline, hidden until hover
     const isHeadingAnchor =
       typeof props.className === "string" && props.className.includes("anchor");
 

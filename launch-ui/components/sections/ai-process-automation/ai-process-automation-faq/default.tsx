@@ -33,7 +33,7 @@ export default function FAQ({
       answer: (
         <>
           <p className="text-muted-foreground mb-4 max-w-[640px] text-balance">
-            Yes — 100% ownership transfers to you upon final payment. 
+            Yes - 100% ownership transfers to you upon final payment. 
             You receive full source code via a private GitHub repository, 
             complete documentation, and all credentials. You can modify, 
             deploy, sell, or publish it in any way. We retain zero rights 
@@ -56,7 +56,7 @@ export default function FAQ({
           <p className="text-muted-foreground mb-4 max-w-[600px]">
             We follow a milestone-based model: 15% advance after consultation 
             and scope agreement, and 75% in middle of the project and 15% only after you review and approve 
-            the final delivery. If we fail to deliver as agreed, you get a 100% refund — 
+            the final delivery. If we fail to deliver as agreed, you get a 100% refund - 
             no conditions. We accept UPI, bank transfer, PayPal, and Wise for international clients.
           </p>
           <p className="text-muted-foreground mb-4 max-w-[580px]">
@@ -76,7 +76,7 @@ export default function FAQ({
         <>
           <p className="text-muted-foreground mb-4 max-w-[580px]">
             Absolutely. We sign a Non-Disclosure Agreement (NDA) 
-            before any project discussion begins — free of charge, on request. 
+            before any project discussion begins - free of charge, on request. 
             Your idea, architecture, business logic, and all project details are never 
             shared with any third party. We are DPIIT registered and legally bound by the NDA.
           </p>
@@ -124,7 +124,7 @@ export default function FAQ({
       answer: (
         <>
           <p className="text-muted-foreground mb-4 max-w-[580px]">
-          This is exactly who we work best with. You bring the business vision — 
+          This is exactly who we work best with. You bring the business vision - 
           we handle 100% of the technical execution. We explain everything in plain language, 
           keep you updated via WhatsApp, and never use jargon without explaining it. 
           Many of our best client relationships are with non-technical founders.

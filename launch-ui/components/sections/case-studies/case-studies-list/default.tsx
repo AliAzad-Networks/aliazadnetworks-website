@@ -8,7 +8,7 @@ export default function FeatureCardsAI({ className }: { className?: string }) {
     {
       category: "E-Commerce / D2C",
       title: "AI Customer Support Bot That Handles 85% of Queries Without a Human",
-      description: "A D2C clothing startup was drowning in 400+ customer support messages per day — shipping queries, size guides, return requests. A single support agent was overwhelmed and response times hit 48 hours, killing conversions. We built an AI support system trained on their exact product catalogue, shipping policies, and FAQ database.",
+      description: "A D2C clothing startup was drowning in 400+ customer support messages per day - shipping queries, size guides, return requests. A single support agent was overwhelmed and response times hit 48 hours, killing conversions. We built an AI support system trained on their exact product catalogue, shipping policies, and FAQ database.",
       button1: "RAG Chatbot",
       button2: "LangChain",
       button3: "GPT-4o",
@@ -19,7 +19,7 @@ export default function FeatureCardsAI({ className }: { className?: string }) {
     {
       category: "SaaS / B2B Sales",
       title: "AI Sales Forecasting System That Predicted Revenue with 91% Accuracy",
-      description: "A B2B SaaS startup's sales team was making pipeline decisions on gut feeling, leading to missed targets every quarter. We built an ML-powered forecasting model that ingests CRM data, deal history, and market signals to predict which deals will close, when, and at what value — with 91% historical accuracy.",
+      description: "A B2B SaaS startup's sales team was making pipeline decisions on gut feeling, leading to missed targets every quarter. We built an ML-powered forecasting model that ingests CRM data, deal history, and market signals to predict which deals will close, when, and at what value - with 91% historical accuracy.",
       button1: "Predictive ML",
       button2: "Python",
       button3: "Scikit-learn",
@@ -29,7 +29,7 @@ export default function FeatureCardsAI({ className }: { className?: string }) {
     },
     {
       category: "Legal Tech / Startup",
-      title: "Legal Document AI — Contract Review in 90 Seconds Instead of 3 Hours",
+      title: "Legal Document AI - Contract Review in 90 Seconds Instead of 3 Hours",
       description: "A legal-tech startup needed to review hundreds of vendor contracts weekly for risk clauses, payment terms, and liability caps. Their lawyers were spending 3+ hours per document. We built a RAG-powered document intelligence system that extracts, flags, and summarises key clauses in under 90 seconds per contract.",
       button1: "Document AI",
       button2: "RAG Pipeline",
@@ -41,7 +41,7 @@ export default function FeatureCardsAI({ className }: { className?: string }) {
     {
       category: "Retail / Supply Chain",
       title: "Computer Vision Inventory System That Eliminated Manual Stock Counting",
-      description: "A retail startup with 3 warehouse locations was doing manual inventory counts twice daily — 6 people, 4 hours each time. Errors caused stockouts and overordering costing ₹4L+ monthly. We built a computer vision system using ceiling-mounted cameras and a YOLO-based model that counts, identifies, and tracks inventory in real-time.",
+      description: "A retail startup with 3 warehouse locations was doing manual inventory counts twice daily - 6 people, 4 hours each time. Errors caused stockouts and overordering costing ₹4L+ monthly. We built a computer vision system using ceiling-mounted cameras and a YOLO-based model that counts, identifies, and tracks inventory in real-time.",
       button1: "Computer Vision",
       button2: "YOLO v8",
       button3: "OpenCV",
@@ -52,7 +52,7 @@ export default function FeatureCardsAI({ className }: { className?: string }) {
     {
       category: "FinTech / Lending",
       title: "AI Lead Scoring Engine That Tripled Conversion Rate for a Lending Startup",
-      description: "A fintech lending startup was calling every lead with equal priority — wasting their sales team's time on unqualified prospects. We built an ML scoring model that analyses 40+ behavioural and demographic signals to rank every incoming lead by conversion probability, so sales calls the right people first.",
+      description: "A fintech lending startup was calling every lead with equal priority - wasting their sales team's time on unqualified prospects. We built an ML scoring model that analyses 40+ behavioural and demographic signals to rank every incoming lead by conversion probability, so sales calls the right people first.",
       button1: "ML Lead Scoring",
       button2: "XGBoost",
       button3: "Feature Engineering",
@@ -63,7 +63,7 @@ export default function FeatureCardsAI({ className }: { className?: string }) {
     {
       category: "Professional Services",
       title: "WhatsApp AI Business Assistant That Books, Answers, and Follows Up Automatically",
-      description: "A consulting startup's founder was spending 4+ hours daily answering WhatsApp queries, booking calls, sending proposals, and following up with leads. We built an intelligent WhatsApp business assistant using GPT-4o and the WhatsApp Business API that handles the entire pre-sales conversation — qualification to booking — without the founder typing a word.",
+      description: "A consulting startup's founder was spending 4+ hours daily answering WhatsApp queries, booking calls, sending proposals, and following up with leads. We built an intelligent WhatsApp business assistant using GPT-4o and the WhatsApp Business API that handles the entire pre-sales conversation - qualification to booking - without the founder typing a word.",
       button1: "WhatsApp AI",
       button2: "GPT-4o",
       button3: "LangChain Agents",

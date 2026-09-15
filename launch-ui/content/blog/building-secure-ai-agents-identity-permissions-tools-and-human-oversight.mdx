@@ -6,29 +6,37 @@ author: "Tauqeer Ali"
 authorImage: "/assets/images/blog/author_image/tauqeer-ali.jpeg"
 category: "AI & Automation"
 cover: "/assets/images/blog/secure-ai-agents-identity-permissions.webp"
-tags: ["AI Agents", "Security", "Permissions", "Identity", "Human-in-the-loop", "Enterprise"]
+tags:
+  [
+    "AI Agents",
+    "Security",
+    "Permissions",
+    "Identity",
+    "Human-in-the-loop",
+    "Enterprise",
+  ]
 featured: true
 ---
 
 # Building Secure AI Agents: Identity, Permissions, Tools, and Human Oversight
 
-An AI agent that can read your database is useful. An AI agent that can read your database, write to it, call three external APIs, and send emails on your behalf — with no defined boundary on what it's allowed to do — is a security incident waiting for a trigger.
+An AI agent that can read your database is useful. An AI agent that can read your database, write to it, call three external APIs, and send emails on your behalf - with no defined boundary on what it's allowed to do - is a security incident waiting for a trigger.
 
 Most teams building agentic systems focus their engineering effort on capability: better planning, better tool use, better reasoning. Far fewer focus on the question that actually determines whether an agent is safe to deploy: **what is this agent allowed to do, as whom, and who's watching when it acts?**
 
-This is a practical breakdown of agent security — identity, permissions, tool boundaries, and human oversight — built for teams shipping agents into real systems, not demos.
+This is a practical breakdown of agent security - identity, permissions, tool boundaries, and human oversight - built for teams shipping agents into real systems, not demos.
 
 ## Why Agent Security Is a Different Problem Than App Security
 
 Traditional application security assumes a fixed, predictable set of code paths. A user clicks a button, a known function executes, the blast radius is bounded by what that function was written to do.
 
-Agentic systems break this assumption. An LLM-driven agent chooses its own sequence of actions at runtime based on a natural-language goal. The same agent might take a completely different path through your systems on two runs with nearly identical input. That non-determinism is exactly what makes agents useful — and exactly what makes them dangerous without the right boundaries.
+Agentic systems break this assumption. An LLM-driven agent chooses its own sequence of actions at runtime based on a natural-language goal. The same agent might take a completely different path through your systems on two runs with nearly identical input. That non-determinism is exactly what makes agents useful - and exactly what makes them dangerous without the right boundaries.
 
-> Securing an agent isn't about preventing bad code from running. It's about constraining what a *correctly functioning* agent is allowed to decide to do.
+> Securing an agent isn't about preventing bad code from running. It's about constraining what a _correctly functioning_ agent is allowed to decide to do.
 
-## Layer 1: Identity — The Agent Is Not "The System"
+## Layer 1: Identity - The Agent Is Not "The System"
 
-The most common security mistake in early agent deployments: the agent runs under the same service credentials as the backend that hosts it. This means an agent has, by default, every permission your application has — far more than it needs for its actual task.
+The most common security mistake in early agent deployments: the agent runs under the same service credentials as the backend that hosts it. This means an agent has, by default, every permission your application has - far more than it needs for its actual task.
 
 Every agent should have its own identity, distinct from the application and from the end user it's acting for.
 
@@ -43,15 +51,15 @@ agent_identity:
 
 Three properties matter here:
 
-- **Distinct identity** — the agent's actions are attributable to the agent, not folded into generic "system" logs
-- **Delegated, not inherited, authority** — the agent acts *on behalf of* a specific user or process with a specific scope, not with blanket application-level access
-- **Short-lived credentials** — tokens that expire fast limit the damage window if an agent is compromised or misbehaves
+- **Distinct identity** - the agent's actions are attributable to the agent, not folded into generic "system" logs
+- **Delegated, not inherited, authority** - the agent acts _on behalf of_ a specific user or process with a specific scope, not with blanket application-level access
+- **Short-lived credentials** - tokens that expire fast limit the damage window if an agent is compromised or misbehaves
 
 This is the same principle behind OAuth delegation and service-to-service mTLS, applied to a non-deterministic actor instead of a deterministic one.
 
-## Layer 2: Permissions — Least Privilege, Enforced Outside the Model
+## Layer 2: Permissions - Least Privilege, Enforced Outside the Model
 
-Never rely on a system prompt to enforce a permission boundary. "You are only allowed to issue refunds under $50" is an instruction, not a control — a sufficiently adversarial input, a hallucination, or a planning error can cause the model to disregard it entirely.
+Never rely on a system prompt to enforce a permission boundary. "You are only allowed to issue refunds under $50" is an instruction, not a control - a sufficiently adversarial input, a hallucination, or a planning error can cause the model to disregard it entirely.
 
 Permissions must be enforced at the tool layer, outside the model's reasoning, where the model has no ability to argue its way past them.
 
@@ -76,16 +84,16 @@ Two patterns are worth calling out:
 - **Field-level restrictions**, not just tool-level ones. An agent might legitimately need to read a customer record but should never see full payment credentials.
 - **Explicit deny lists** for tools that exist in the system but should never be reachable by this agent, regardless of what it's asked to do.
 
-## Layer 3: The Tool Boundary — Where Autonomy Actually Gets Constrained
+## Layer 3: The Tool Boundary - Where Autonomy Actually Gets Constrained
 
-Tools are the only place an agent's decisions become real-world effects. This makes the tool layer the single highest-leverage point for security — more important than prompt design, more important than model choice.
+Tools are the only place an agent's decisions become real-world effects. This makes the tool layer the single highest-leverage point for security - more important than prompt design, more important than model choice.
 
 A secure tool interface does four things a raw API call doesn't:
 
 1. **Validates inputs against a strict schema** before execution, rejecting malformed or out-of-range calls the model shouldn't have generated in the first place
 2. **Rate-limits per agent and per identity**, not just globally, so one misbehaving agent run can't exhaust a shared resource
 3. **Logs the full call and result**, tied to the agent's identity and the originating task
-4. **Fails closed** — if validation is uncertain or the tool call is ambiguous, the default behavior is to refuse and escalate, not to guess
+4. **Fails closed** - if validation is uncertain or the tool call is ambiguous, the default behavior is to refuse and escalate, not to guess
 
 ```python
 def issue_refund(agent_identity, order_id, amount, currency):
@@ -101,22 +109,25 @@ def issue_refund(agent_identity, order_id, amount, currency):
     return result
 ```
 
-Notice that the permission check, the limit check, and the audit log all happen in code the model never sees or controls. The model decides *to call* the tool. It does not decide *whether the call is allowed*.
+Notice that the permission check, the limit check, and the audit log all happen in code the model never sees or controls. The model decides _to call_ the tool. It does not decide _whether the call is allowed_.
 
-## Layer 4: Human Oversight — Designed In, Not Bolted On
+## Layer 4: Human Oversight - Designed In, Not Bolted On
 
-Human-in-the-loop is often treated as a temporary training-wheels phase to be removed once an agent "proves itself." That framing is backwards. Oversight should be a permanent, structural part of the architecture, with its intensity tuned by risk — not a phase you graduate out of.
+Human-in-the-loop is often treated as a temporary training-wheels phase to be removed once an agent "proves itself." That framing is backwards. Oversight should be a permanent, structural part of the architecture, with its intensity tuned by risk - not a phase you graduate out of.
 
 A practical oversight model has three tiers:
 
 ### Tier 1: Autonomous
+
 Low-risk, low-value, easily reversible actions. Agent acts, logs, no human involved. Example: sending a status-update email.
 
 ### Tier 2: Shadow Approval
+
 Medium-risk actions where the agent proposes the action and a human approves before execution, with a target approval time (e.g., under 2 minutes) to keep the workflow fast.
 
 ### Tier 3: Full Human Execution
-High-risk, high-value, or hard-to-reverse actions where the agent prepares everything — context, recommendation, draft action — but a human executes it directly.
+
+High-risk, high-value, or hard-to-reverse actions where the agent prepares everything - context, recommendation, draft action - but a human executes it directly.
 
 ```yaml
 oversight_tiers:
@@ -127,25 +138,28 @@ oversight_tiers:
   delete_data: "full_human_execution"
 ```
 
-The tier assignment itself should be reviewed periodically — as an agent's error rate and track record become clearer, it's a deliberate decision to move a specific action down a tier, not an assumption that trust accumulates automatically.
+The tier assignment itself should be reviewed periodically - as an agent's error rate and track record become clearer, it's a deliberate decision to move a specific action down a tier, not an assumption that trust accumulates automatically.
 
 <Callout>
-The agents that fail publicly are almost never the ones without human oversight — they're the ones where oversight existed on paper but wasn't enforced at the action layer. A "human review" step that a fast, autonomous action bypasses under load isn't oversight. It's documentation.
+  The agents that fail publicly are almost never the ones without human
+  oversight - they're the ones where oversight existed on paper but wasn't
+  enforced at the action layer. A "human review" step that a fast, autonomous
+  action bypasses under load isn't oversight. It's documentation.
 </Callout>
 
 ## Threat Patterns Specific to Agentic Systems
 
 Beyond standard application security, agent deployments face threats unique to LLM-driven decision-making:
 
-- **Prompt injection via tool output** — a malicious value embedded in retrieved data (a customer name, a document, a webpage) attempts to redirect the agent's next action. Mitigation: treat all tool output as untrusted data, never as instructions, and validate before it re-enters the planning loop.
-- **Goal drift over long-running tasks** — an agent executing a multi-step task gradually reinterprets its objective in a way that technically satisfies its stated success criteria while violating intent. Mitigation: tight, unambiguous success criteria and periodic re-grounding against the original goal.
-- **Privilege escalation through chained tools** — no single tool call is dangerous, but a sequence of otherwise-permitted calls achieves an effect that should have required a higher permission tier. Mitigation: evaluate permission boundaries at the workflow level, not only the individual tool-call level.
+- **Prompt injection via tool output** - a malicious value embedded in retrieved data (a customer name, a document, a webpage) attempts to redirect the agent's next action. Mitigation: treat all tool output as untrusted data, never as instructions, and validate before it re-enters the planning loop.
+- **Goal drift over long-running tasks** - an agent executing a multi-step task gradually reinterprets its objective in a way that technically satisfies its stated success criteria while violating intent. Mitigation: tight, unambiguous success criteria and periodic re-grounding against the original goal.
+- **Privilege escalation through chained tools** - no single tool call is dangerous, but a sequence of otherwise-permitted calls achieves an effect that should have required a higher permission tier. Mitigation: evaluate permission boundaries at the workflow level, not only the individual tool-call level.
 
 ## A Security Checklist for Shipping an Agent
 
 Before granting an agent write access to a production system, confirm:
 
-- [ ] The agent has a distinct, short-lived identity — not inherited application credentials
+- [ ] The agent has a distinct, short-lived identity - not inherited application credentials
 - [ ] Every tool enforces permissions in code, not in the prompt
 - [ ] Field-level data access is restricted, not just tool-level access
 - [ ] All tool calls are logged with agent identity, inputs, and results
@@ -153,7 +167,7 @@ Before granting an agent write access to a production system, confirm:
 - [ ] Tool output is treated as untrusted data, never as instructions
 - [ ] There's a tested, fast escalation path when confidence is low or validation fails
 
-If any of these are unchecked, the gap isn't a future improvement — it's the current attack surface.
+If any of these are unchecked, the gap isn't a future improvement - it's the current attack surface.
 
 ## Conclusion
 
@@ -162,5 +176,8 @@ Capability gets an agent into a demo. Security is what gets it into production a
 None of this slows an agent down when it's built in from the start. It only feels expensive when it's retrofitted after something has already gone wrong.
 
 <Callout>
-AliAzad Networks builds AI agents with identity, permissioning, and oversight designed in from the architecture stage — not bolted on after an incident. If you're deploying agents into production systems, [start a conversation with us](/contact).
+  AliAzad Networks builds AI agents with identity, permissioning, and oversight
+  designed in from the architecture stage - not bolted on after an incident. If
+  you're deploying agents into production systems, [start a conversation with
+  us](/contact).
 </Callout>

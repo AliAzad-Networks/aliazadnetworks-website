@@ -1,22 +1,23 @@
 ---
 title: "Designing an Enterprise AI Agent Architecture for Real-World Workflows"
-description: "A practical guide to the layers, patterns, and trade-offs behind production-grade agentic systems — written for engineers and architects building AI that actually ships."
+description: "A practical guide to the layers, patterns, and trade-offs behind production-grade agentic systems - written for engineers and architects building AI that actually ships."
 date: "2026-09-11"
 author: "Tauqeer Ali"
 authorImage: "/assets/images/blog/author_image/tauqeer-ali.jpeg"
 category: "Engineering"
 cover: "/assets/images/blog/enterprise-ai-agent-architecture.png"
-tags: ["AI Agents", "Architecture", "Engineering", "Enterprise", "System Design"]
+tags:
+  ["AI Agents", "Architecture", "Engineering", "Enterprise", "System Design"]
 featured: true
 ---
 
 # Designing an Enterprise AI Agent Architecture for Real-World Workflows
 
-Most AI agent demos are built for the moment of awe. They work beautifully — until they meet a real business process with permissions, compliance rules, edge cases, and a customer on the other end.
+Most AI agent demos are built for the moment of awe. They work beautifully - until they meet a real business process with permissions, compliance rules, edge cases, and a customer on the other end.
 
 That gap between a demo and a production system is not a matter of better prompts. It's a matter of **architecture**.
 
-This guide walks through the layers, patterns, and trade-offs behind enterprise-grade agentic AI — the kind that runs workflows, owns outcomes, and survives contact with reality.
+This guide walks through the layers, patterns, and trade-offs behind enterprise-grade agentic AI - the kind that runs workflows, owns outcomes, and survives contact with reality.
 
 ## The Core Problem
 
@@ -31,7 +32,7 @@ Good architecture doesn't try to eliminate this tension. It **encodes it explici
 
 ## The Seven Layers of a Production Agent
 
-Every serious enterprise agent stacks the same seven layers. Skip one and it will fail in production — usually quietly.
+Every serious enterprise agent stacks the same seven layers. Skip one and it will fail in production - usually quietly.
 
 ### Layer 1: Goal Definition
 
@@ -39,10 +40,10 @@ An agent must have a bounded, measurable goal. Not "help with support." But "res
 
 Goals must include:
 
-- **Success criteria** — what "done" means, numerically
-- **Failure criteria** — what should trigger escalation
-- **Timeout** — after how long the agent stops
-- **Budget** — maximum cost per execution
+- **Success criteria** - what "done" means, numerically
+- **Failure criteria** - what should trigger escalation
+- **Timeout** - after how long the agent stops
+- **Budget** - maximum cost per execution
 
 ```yaml
 goal:
@@ -51,3 +52,4 @@ goal:
   failure: "confidence < 0.7 OR customer_frustration_detected"
   timeout: "4h"
   max_cost_per_run: "$0.35"
+```

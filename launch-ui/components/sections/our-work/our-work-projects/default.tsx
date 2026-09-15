@@ -72,18 +72,18 @@ export default function Portfolio() {
       title: "AI Customer Support Bot That Handles 85% of Queries Without a Human",
       category: "AI-Drivien Process Automation",
       imageSrc: "https://botphonic.ai/wp-content/uploads/2025/06/Customer-Support-Botphonic.webp",
-      description: "A D2C clothing startup was drowning in 400+ customer support messages per day — shipping queries, size guides, return requests. A single support agent was overwhelmed and response times hit 48 hours, killing conversions. We built an AI support system trained on their exact product catalogue, shipping policies, and FAQ database.",
+      description: "A D2C clothing startup was drowning in 400+ customer support messages per day - shipping queries, size guides, return requests. A single support agent was overwhelmed and response times hit 48 hours, killing conversions. We built an AI support system trained on their exact product catalogue, shipping policies, and FAQ database.",
     },
     {
       id: "2",
-      title: "Sales Forecasting AI — 91% Revenue Prediction Accuracy",
+      title: "Sales Forecasting AI - 91% Revenue Prediction Accuracy",
       category: "AI-Drivien Process Automation",
       imageSrc: "https://www.oracle.com/a/ocom/img/rc24-a-day-in-the-life-smarter-demand-planning-with-ai-and-ml.jpg",
       description: "B2B SaaS startup missing pipeline targets every quarter. Built an XGBoost model ingesting CRM data, deal history, and market signals to predict deal close probability and timing with 91% historical accuracy.",
     },
     {
       id: "3",
-      title: "Legal Contract AI — Review in 90 Seconds, Not 3 Hours",
+      title: "Legal Contract AI - Review in 90 Seconds, Not 3 Hours",
       category: "AI-Drivien Process Automation",
       imageSrc: "https://imgproxy.divecdn.com/0zMmA5e92XS8JDbLepXA2e3F7UFUeWVCyajQq_qFqLI/g:ce/rs:fill:1200:675:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0xNjUyMDA2MDE4LmpwZw==.webp",
       description: "Legal-tech startup reviewing hundreds of vendor contracts weekly. Built a RAG pipeline using Claude API that extracts, flags, and summarises payment terms, risk clauses, and liability caps in under 90 seconds per document.",
@@ -92,44 +92,44 @@ export default function Portfolio() {
     // Startup Tech Projects (2)
     {
       id: "4",
-      title: "AI Lead Scoring Engine — Tripled Conversion Rate for Lending Startup",
+      title: "AI Lead Scoring Engine - Tripled Conversion Rate for Lending Startup",
       category: "AI-Drivien Process Automation",
       imageSrc: "https://cdn.prod.website-files.com/660f38f06a23cf2d2fb65170/6906bf2cdff94499032f2655_6906a2919cea6427b3143c2f-1762048512667.jpeg",
       description: "FinTech lending startup calling every lead with equal priority. Built an ML scoring model analysing 40+ behavioural signals to rank leads by conversion probability, delivered as a real-time API into their CRM.",
     },
     {
       id: "5",
-      title: "WhatsApp AI Assistant — Books, Qualifies & Follows Up Automatically",
+      title: "WhatsApp AI Assistant - Books, Qualifies & Follows Up Automatically",
       category: "AI-Drivien Process Automation",
       imageSrc: "https://s.yimg.com/ny/api/res/1.2/rsTp81K1MU9Objj.BYgzTg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyNDI7aD02OTQ-/https://s.yimg.com/os/creatr-uploaded-images/2025-08/1b61dea0-8370-11f0-97fe-de0d6d3f8f74",
-      description: "Consulting founder spending 4+ daily hours on WhatsApp queries. Built a GPT-4o powered AI assistant that qualifies leads, books Calendly calls, sends proposals, and follows up — without the founder typing a word.",
+      description: "Consulting founder spending 4+ daily hours on WhatsApp queries. Built a GPT-4o powered AI assistant that qualifies leads, books Calendly calls, sends proposals, and follows up - without the founder typing a word.",
     },
     
     // Research Paper (1)
     {
       id: "6",
-      title: "Inventory Vision AI — Real-Time Stock Counting, Zero Manual Work",
+      title: "Inventory Vision AI - Real-Time Stock Counting, Zero Manual Work",
       category: "AI-Drivien Process Automation",
       imageSrc: "https://imagevision.ai/wp-content/uploads/2025/10/Automated-Package-Counting-Using-Vision-AI-for-High-Volume-Facilities_Website.jpg",
-      description: "Retail startup counting stock manually twice daily across 3 warehouses — 6 people, 4 hrs each. YOLO v8 + OpenCV ceiling-camera system now tracks inventory in real time with 96% accuracy, eliminating all manual counting.",
+      description: "Retail startup counting stock manually twice daily across 3 warehouses - 6 people, 4 hrs each. YOLO v8 + OpenCV ceiling-camera system now tracks inventory in real time with 96% accuracy, eliminating all manual counting.",
     },
     {
       id: "1",
-      title: "Invoice Intelligence — Automated Data Extraction from 500+ PDFs Daily",
+      title: "Invoice Intelligence - Automated Data Extraction from 500+ PDFs Daily",
       category: "AI-Drivien Process Automation",
       imageSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToJIu6fbsPhhgNdjGiV0wovsJ1nApW68WPXA&s",
-      description: "Accounts team manually entering data from 500+ supplier invoices every day — 8 hours of data entry per day, 12% error rate. Built a document AI pipeline that extracts, validates, and pushes structured data to their ERP in seconds.",
+      description: "Accounts team manually entering data from 500+ supplier invoices every day - 8 hours of data entry per day, 12% error rate. Built a document AI pipeline that extracts, validates, and pushes structured data to their ERP in seconds.",
     },
     {
       id: "2",
-      title: "AI Onboarding System — Personalised User Journey, Zero Manual Emails",
+      title: "AI Onboarding System - Personalised User Journey, Zero Manual Emails",
       category: "AI-Drivien Process Automation",
       imageSrc: "https://epaouydin3q.exactdn.com/wp-content/uploads/2025/07/AI-Sales-Onboarding.jpeg?strip=all&lossy=1&ssl=1&fit=866,494",
       description: "SaaS startup sending the same generic onboarding email to every new user. Built an LLM-powered onboarding system that analyses each user's signup data and behaviour to send personalised, contextual emails and in-app messages at the perfect moment.",
     },
     {
       id: "3",
-      title: "Review Intelligence AI — Auto-Respond, Detect Angry Customers, Prevent Churn",
+      title: "Review Intelligence AI - Auto-Respond, Detect Angry Customers, Prevent Churn",
       category: "AI-Drivien Process Automation",
       imageSrc: "https://estyn.gov.wales/app/uploads/2025/01/iStock-2163352306.jpg",
       description: "D2C brand with 200+ daily reviews across Amazon, Google, and their own site. NLP model classifies sentiment, auto-responds to positives, and flags + escalates negatives to human support within 2 minutes before the customer churns.",
@@ -138,14 +138,14 @@ export default function Portfolio() {
     // Startup Tech Projects (2)
     {
       id: "4",
-      title: "AI Demand Forecasting — Predicts Next 30-Day Inventory Needs",
+      title: "AI Demand Forecasting - Predicts Next 30-Day Inventory Needs",
       category: "AI-Drivien Process Automation",
       imageSrc: "https://www.toolsgroup.com/wp-content/uploads/2025/03/AI-Powered-Demand-Forecasting-Transforms-New-Product-Introductions-COVER.jpg",
       description: "E-commerce startup regularly over/under-ordering stock, costing ₹2L+ monthly in waste and lost sales. Built a time-series ML model that forecasts demand per SKU for the next 30 days, accounting for seasonality, promotions, and trends.",
     },
     {
       id: "5",
-      title: "Dynamic Pricing AI — Real-Time Price Optimisation for Maximum Revenue",
+      title: "Dynamic Pricing AI - Real-Time Price Optimisation for Maximum Revenue",
       category: "AI-Drivien Process Automation",
       imageSrc: "https://linksture.b-cdn.net/wp-content/uploads/2025/09/real-world-examples-of-ai-dynamic-pricing.jpg",
       description: "D2C startup pricing products statically, leaving significant revenue on the table. Built an ML pricing engine that analyses demand elasticity, competitor pricing, inventory levels, and time-of-day to recommend optimal price per SKU in real time.",
@@ -154,10 +154,10 @@ export default function Portfolio() {
     // Research Paper (1)
     {
       id: "6",
-      title: "AI Business Intelligence — Automated Weekly Reports Written by AI",
+      title: "AI Business Intelligence - Automated Weekly Reports Written by AI",
       category: "AI-Drivien Process Automation",
       imageSrc: "https://conversight.ai/wp-content/uploads/2023/11/Updated-Resource-Covers-31-1024x536.png",
-      description: "Startup founder spending 6+ hours every Monday morning pulling data and writing weekly business reports for investors and team. Built an AI pipeline that pulls live data from 8 sources, analyses trends, and writes a fully formatted investor-ready report — delivered automatically every Monday at 8AM.",
+      description: "Startup founder spending 6+ hours every Monday morning pulling data and writing weekly business reports for investors and team. Built an AI pipeline that pulls live data from 8 sources, analyses trends, and writes a fully formatted investor-ready report - delivered automatically every Monday at 8AM.",
     },
     {
       id: "1",
