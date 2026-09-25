@@ -46,14 +46,15 @@ export default function Hero({
   buttons = [
     {
       href: siteConfig.getStartedUrl,
-      text: "Get Started with AliAzad",
+      text: "Talk to an Expert",
       variant: "default",
+      iconRight: <ArrowRightIcon className="ml-2 size-4" />,
     },
     {
       href: siteConfig.page.contact,
-      text: "Talk to an Expert",
+      text: "Explore Our Services",
       variant: "glow",
-      icon: <CalendarCheck className="mr-2 size-4" />,
+  
     },
   ],
   className,

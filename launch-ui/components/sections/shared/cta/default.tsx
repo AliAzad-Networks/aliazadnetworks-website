@@ -37,12 +37,12 @@ const WhatsAppIcon = () => (
 );
 
 export default function CTA({
-  headline = "Ready to build something great?",
+  headline = "Have a Business Challenge or Software Idea?",
   subline = "Book a free consultation with our experts and discover how we can help you turn your vision into reality.",
   buttons = [
     {
       href: siteConfig.calendlyUrl || "https://calendly.com/aliazadnetworks/consultation",
-      text: "Book Free Consultation",
+      text: "Request a Consultation",
       variant: "default",
       icon: <Calendar className="mr-2 h-4 w-4" />,
     },
@@ -59,7 +59,7 @@ export default function CTA({
     <Section className={cn("py-16 md:py-16 group relative overflow-hidden px-8", className)}>
       <div className="max-w-container relative z-10 mx-auto flex flex-col items-center gap-6 text-center sm:gap-8">
         {/* Headline */}
-        <h2 className="max-w-[640px] text-3xl leading-tight font-semibold sm:text-4xl sm:leading-tight">
+        <h2 className="max-w-[800px] text-3xl leading-tight font-semibold sm:text-4xl sm:leading-tight">
           {headline}
         </h2>
         

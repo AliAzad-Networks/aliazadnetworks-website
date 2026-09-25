@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { type VariantProps } from "class-variance-authority";
 import { Menu } from "lucide-react";
 import { ReactNode } from "react";
+import { ArrowRightIcon, CalendarCheck } from "lucide-react";
 
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
@@ -54,10 +55,11 @@ export default function Navbar({
   actions = [
     { text: "Sign in", href: siteConfig.url, isButton: false },
     {
-      text: "Get Free Consultation",
+      text: "Talk to an Expert",
       href: siteConfig.url,
       isButton: true,
       variant: "default",
+      iconRight: <ArrowRightIcon className="ml-2 size-4" />,
     },
   ],
   showNavigation = true,

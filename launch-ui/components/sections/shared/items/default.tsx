@@ -49,13 +49,13 @@ export default function FeatureGridAlt({ className }: { className?: string }) {
     },
     {
       icon: <UserRoundCog className="w-5 h-5" />,
-      title: "Built to Scale",
-      description: "We build our technology solutions to be designed with future users, integrations, features, performance, and business growth in mind.",
+      title: "Direct Collaboration",
+      description: "Work closely with the people responsible for your project. We build our technology solutions to be designed with future business growth",
     },
     {
       icon: <KanbanSquare className="w-5 h-5" />,
-      title: "Long-Term Technology Partnership",
-      description: "Our relationship does not end at deployment. We aim to become a trusted technology partner that continues to help your business improve, and automate",
+      title: "Long-Term Partnership",
+      description: "We aim to become a trusted technology partner that continues to help your business improve, and automate",
     },
   ];
 

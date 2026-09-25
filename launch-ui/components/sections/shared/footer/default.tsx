@@ -60,7 +60,7 @@ export default function FooterSection({
       title: "Company",
       links: [
         { text: "About AliAzad", href: siteConfig.page.about },
-        { text: "Explore Events", href: siteConfig.page.events },
+        { text: "Case Studies", href: siteConfig.page.events },
         { text: "Our Process", href: siteConfig.page.process },
         { text: "Contact Sales", href: siteConfig.page.contact },
       ],
@@ -68,10 +68,10 @@ export default function FooterSection({
     {
       title: "Resources",
       links: [
-        { text: "Our Work", href: siteConfig.page.ourwork },
+        { text: "Blogs & News", href: siteConfig.page.ourwork },
         { text: "Our Teams", href: siteConfig.page.team },
-        { text: "Case Studies", href: siteConfig.page.casestudies },
-        { text: "Blogs & News", href: siteConfig.page.blog },
+        { text: "Our Work", href: siteConfig.page.casestudies },
+        { text: "Explore Events", href: siteConfig.page.blog },
       ],
     },
     {
