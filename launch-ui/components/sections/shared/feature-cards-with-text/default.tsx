@@ -26,7 +26,7 @@ export default function FeatureCardsWithText({ className }: { className?: string
   ];
 
   return (
-    <Section className={cn("py-16 md:py-24 bg-[#F6F9FF]", className)}>
+    <Section className={cn("py-16 md:py-24 bg-gradient-to-b from-[#FAFCFE] to-[#F8F3F9] dark:from-primary/10 dark:to-background", className)}>
       <div className="max-w-container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-between gap-10 lg:gap-16">
           
@@ -37,7 +37,7 @@ export default function FeatureCardsWithText({ className }: { className?: string
               Technology is Our Engine,<br />
               Innovation Our Fuel
             </h2>
-            <p className="text-muted-foreground text-sm lg:text-base max-w-xl">
+            <p className="text-sm lg:text-base max-w-xl">
               Whether you’re building smarter products, scaling with cloud, reimagining the customer experience or unlocking AI-led efficiencies, our solutions are built to meet you where you are and take you further, faster.
             </p>
           </div>

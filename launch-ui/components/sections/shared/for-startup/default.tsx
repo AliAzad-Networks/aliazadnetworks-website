@@ -35,7 +35,7 @@ export default function TrustedBanner({ className }: { className?: string }) {
                 {/* CTA Button */}
                 <Link
                     href={siteConfig.page.contact || "/contact"}
-                    className="flex items-center gap-1 text-sm px-6 py-2.5 bg-primary text-primary-foreground hover:bg-primary/90 active:scale-95 transition rounded-full mt-6"
+                    className="flex items-center gap-1 text-sm px-6 py-2.5 bg-primary text-primary-foreground hover:bg-primary/90 active:scale-95 transition  mt-6"
                     >
                     Read the executive brief
                     <svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">

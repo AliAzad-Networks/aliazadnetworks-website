@@ -38,7 +38,6 @@ const WhatsAppIcon = () => (
 
 export default function CTA({
   headline = "Have a Business Challenge or Software Idea?",
-  subline = "Book a free consultation with our experts and discover how we can help you turn your vision into reality.",
   buttons = [
     {
       href: siteConfig.calendlyUrl || "https://calendly.com/aliazadnetworks/consultation",
@@ -62,12 +61,6 @@ export default function CTA({
         <h2 className="max-w-[800px] text-3xl leading-tight font-semibold sm:text-4xl sm:leading-tight">
           {headline}
         </h2>
-        
-        {/* Subline */}
-        <p className="max-w-[540px] text-black text-base">
-          {subline}
-        </p>
-        
         {/* CTA Buttons */}
         {buttons !== false && buttons.length > 0 && (
           <div className="flex flex-col sm:flex-row justify-center gap-4 w-full sm:w-auto">
