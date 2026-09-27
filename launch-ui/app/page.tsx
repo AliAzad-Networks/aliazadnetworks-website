@@ -9,6 +9,7 @@ import Navbar from "../components/sections/shared/navbar/default";
 import Price from "../components/sections/pricing/price/default";
 import Stats from "../components/sections/shared/stats/default";
 import FeedbackButton from "../components/sections/shared/feedback-button/default"
+import VideoFeature from "@/components/sections/shared/video-feature/default";
 import Services from "../components/sections/shared/services/default";
 import Feature from "../components/sections/shared/feature-cards-with-text/default";
 import WhoWeAre from "../components/sections/shared/who-we-are/default";
@@ -25,7 +26,9 @@ export default function Home() {
     <main className="bg-background text-foreground min-h-screen w-full">
       <Navbar />
       <Hero />
+      <VideoFeature />
       <Logos />
+      
       <Services />
       <Feature />
       <WhoWeAre />

@@ -70,7 +70,7 @@ header: (
 
 export default function BentoGridSection({ className }: { className?: string }) {
   return (
-    <Section className={cn("py-16 md:py-24 bg-gray-50", className)}>
+    <Section className={cn("py-16 md:py-24 bg-white", className)}>
       <div className="max-w-container mx-auto px-4">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-10">
           <div>

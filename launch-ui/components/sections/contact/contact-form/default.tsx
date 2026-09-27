@@ -10,6 +10,7 @@ export default function ContactHero({ className }: { className?: string }) {
     name: "",
     email: "",
     message: "",
+    company: "",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -64,38 +65,50 @@ export default function ContactHero({ className }: { className?: string }) {
           <div className="bg-card border border-border rounded-2xl p-6 md:p-8 shadow-lg">
             <form onSubmit={handleSubmit} className="space-y-5">
               <div>
-                <label className="block text-sm font-medium mb-2">Name</label>
+                <label className="block text-sm font-medium mb-2">Full name *</label>
                 <input 
                   type="text" 
                   required
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  placeholder="Eden Johnson" 
-                  className="w-full px-4 py-3 rounded-lg border border-input bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition"
+                  placeholder="Enter your full name" 
+                  className="w-full px-4 py-3 rounded-lg border border-input bg-white text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition"
                 />
               </div>
   
               <div>
-                <label className="block text-sm font-medium mb-2">Email</label>
+                <label className="block text-sm font-medium mb-2">Business email *</label>
                 <input 
                   type="email" 
                   required
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  placeholder="Eden@example.com" 
-                  className="w-full px-4 py-3 rounded-lg border border-input bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition"
+                  placeholder="name@company.com" 
+                  className="w-full px-4 py-3 rounded-lg border border-input bg-white text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition"
+                />
+              </div>
+
+               <div>
+                <label className="block text-sm font-medium mb-2">Company name *</label>
+                <input 
+                  type="text" 
+                  required
+                  value={formData.company}
+                  onChange={(e) => setFormData({ ...formData, company: e.target.value })}
+                  placeholder="Your company name" 
+                  className="w-full px-4 py-3 rounded-lg border border-input bg-white text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition"
                 />
               </div>
   
               <div>
-                <label className="block text-sm font-medium mb-2">Message</label>
+                <label className="block text-sm font-medium mb-2">Tell us about your requirement *</label>
                 <textarea 
-                  placeholder="Write your message here..." 
+                  placeholder="Describe your business problem, what you want to build, and any important requirements." 
                   rows={5}
                   required
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  className="w-full px-4 py-3 rounded-lg border border-input bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition resize-none"
+                  className="w-full px-4 py-3 rounded-lg border border-input bg-white text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition resize-none"
                 />
               </div>
   

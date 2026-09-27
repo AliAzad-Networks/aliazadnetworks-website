@@ -34,7 +34,7 @@ export default function HeroAlt({ className }: HeroAltProps) {
   return (
     <Section
       className={cn(
-        "py-16 md:py-24 bg-gradient-to-b from-[#D9D9FF] to-[#F8F3F9] dark:from-primary/10 dark:to-background overflow-hidden",
+        "py-16 md:py-24 bg-gradient-to-b from-[#FAFCFE] to-[#F8F3F9] dark:from-primary/10 dark:to-background overflow-hidden",
         className
       )}
     >

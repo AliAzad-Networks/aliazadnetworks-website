@@ -26,7 +26,7 @@ export default function FeatureCardsWithText({ className }: { className?: string
   ];
 
   return (
-    <Section className={cn("py-16 md:py-24 bg-[#F8F4F0]", className)}>
+    <Section className={cn("py-16 md:py-24 bg-[#F6F9FF]", className)}>
       <div className="max-w-container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-between gap-10 lg:gap-16">
           

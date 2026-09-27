@@ -7,7 +7,7 @@ import { siteConfig } from "@/config/site";
 
 export default function BannerSection({ className }: { className?: string }) {
   return (
-    <Section className={cn("", className)}>
+    <Section className={cn("bg-white", className)}>
       <div className="mx-auto px-4">
         {/* Wrapper with relative positioning */}
         <div className="relative flex flex-col items-center justify-center text-center py-16 md:py-40 px-6 bg-cover bg-center bg-no-repeat overflow-hidden"
