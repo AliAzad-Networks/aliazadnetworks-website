@@ -53,7 +53,7 @@ export default function Navbar({
     { text: "Documentation", href: siteConfig.url },
   ],
   actions = [
-    { text: "Sign in", href: siteConfig.url, isButton: false },
+    { text: "Contact Sale", href: siteConfig.page.contact, isButton: false },
     {
       text: "Talk to an Expert",
       href: siteConfig.url,

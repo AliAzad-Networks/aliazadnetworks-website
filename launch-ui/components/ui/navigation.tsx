@@ -65,11 +65,7 @@ export default function Navigation({
       isLink: true,
       href: siteConfig.page.about,
     },
-    {
-      title: "Contact Sales",
-      isLink: true,
-      href: siteConfig.page.contact,
-    },
+   
   ],
   components = [
     {
