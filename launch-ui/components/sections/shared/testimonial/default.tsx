@@ -66,7 +66,7 @@ export default function TestimonialsGrid() {
   ];
 
   return (
-    <section className="bg-zinc-100 dark:bg-zinc-900 py-16 px-8">
+    <section className="bg-gradient-to-b from-[#FAFCFE] to-[#F8F3F9] dark:from-primary/10 dark:to-background py-16 px-8">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="mb-10 text-center md:text-left">
