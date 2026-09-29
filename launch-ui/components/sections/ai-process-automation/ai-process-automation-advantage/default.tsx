@@ -35,7 +35,7 @@ export default function FeatureCards({ className }: FeatureCardsProps) {
   ];
 
   return (
-    <Section className={cn("py-16 md:py-24", className)}>
+    <Section className={cn("py-16 md:py-24 bg-white", className)}>
       <div className="max-w-container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-center gap-12 lg:gap-16">
           

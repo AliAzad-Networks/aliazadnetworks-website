@@ -63,12 +63,12 @@ export default function FeatureCards({ className }: { className?: string }) {
               <h3 className="text-xl md:text-2xl font-semibold text-foreground mt-4">
                 {feature.title}
               </h3>
-              <p className="text-base md:text-md text-muted-foreground mt-1">
+              <p className="text-base md:text-md mt-1">
                 {feature.description}
               </p>
               <Link
                 href={feature.href}
-                className="inline-flex items-center text-primary text-sm font-medium mt-3 hover:gap-1 transition-all"
+                className="inline-flex items-center text-primary text-sm font-semibold mt-3 hover:gap-1 transition-all"
               >
                 Find out more
                 <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -47,7 +47,7 @@ export default function Hero({
   className,
 }: HeroProps) {
   return (
-    <Section className={cn("py-16 md:py-24 bg-[#f9f9f9]", className)}>
+    <Section className={cn("py-16 md:py-24 bg-gradient-to-b from-[#FAFCFE] to-[#F8F3F9] dark:from-primary/10 dark:to-background overflow-hidden", className)}>
       <div className="max-w-container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-20">
           

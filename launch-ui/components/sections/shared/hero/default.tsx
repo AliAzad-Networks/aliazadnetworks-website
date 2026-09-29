@@ -31,7 +31,6 @@ interface HeroProps {
 }
 
 export default function Hero({
-  description = "AliAzad Networks helps companies modernize technology and transform experiences so they stay ahead in a fast changing world.",
   mockup = (
     <Screenshot
       srcLight="/dashboard-light.png"
@@ -77,7 +76,7 @@ export default function Hero({
           </h1>
 
           <p className="text-sm animate-appear text-black relative z-10 max-w-6xl text-balance opacity-0 delay-100 sm:text-base md:text-xl">
-  {description}
+  AliAzad Networks<sup>TM</sup> helps companies modernize technology and transform experiences so they stay ahead in a fast changing world.
 </p>
           
           {buttons !== false && buttons.length > 0 && (

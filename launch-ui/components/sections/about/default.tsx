@@ -42,9 +42,8 @@ export default function About({
   ];
 
   return (
-    <Section className={cn("py-16 md:py-24 relative overflow-hidden", className)}>
+    <Section className={cn("py-16 md:py-24 relative overflow-hidden bg-gradient-to-b from-[#FAFCFE] to-[#F8F3F9] dark:from-primary/10 dark:to-background", className)}>
       {/* Background Blur Effect */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[520px] h-[520px] rounded-full blur-[300px] -z-10 bg-[#FBFFE1]/70 dark:bg-yellow-100/10"></div>
       
       <div className="max-w-container mx-auto px-4">
         {/* Header */}

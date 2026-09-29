@@ -72,36 +72,36 @@ export default function Navigation({
       title: "Technology & SaaS",
       href: siteConfig.page.AiProcessAutomation,
       description:
-        "AI solutions for software development, IT operations, and SaaS innovation.",
+        "AI solutions, IT operations, and SaaS innovation.",
     },
     {
       title: "Healthcare & Life Sciences",
       href: siteConfig.page.AiProcessAutomation,
       description:
-        "AI solutions for patient care, drug discovery, and healthcare operations.",
+        "Patient care, drug discovery, and healthcare operations.",
     },
     {
       title: "Finance & FinTech",
       href: siteConfig.page.AiProcessAutomation,
       description:
-        "AI solutions for financial analysis, risk management, and fintech innovation.",
+        "Financial analysis, risk management, and fintech innovation.",
     },
     {
       title: "Retail & E-commerce",
       href: siteConfig.page.AiProcessAutomation,
-      description: "AI solutions for personalized shopping experiences, inventory management, and customer engagement.",
+      description: "Shopping, inventory management, and customer engagement.",
     },
     {
       title: "Real Estate & Construction",
       href: siteConfig.page.AiProcessAutomation,
       description:
-        "AI solutions for property management, construction planning, and real estate analytics.",
+        "Property management, construction planning, and real estate analytics.",
     },
     {
       title: "Education & EdTech",
       href: siteConfig.page.AiProcessAutomation,
       description:
-        "AI solutions for personalized learning experiences, educational content management, and student engagement.",
+        "Learning, educational content management, and engagement.",
     },
   ],
   insights = [
@@ -245,8 +245,8 @@ function ListItem({
           )}
           {...props}
         >
-          <div className="text-sm leading-none">{title}</div>
-          <p className="text-muted-foreground line-clamp-2 text-sm leading-snug">
+          <div className="text-sm leading-none font-medium">{title}</div>
+          <p className="line-clamp-2 text-sm leading-snug">
             {children}
           </p>
         </a>

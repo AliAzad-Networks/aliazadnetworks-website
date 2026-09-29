@@ -74,7 +74,7 @@ export default function FeatureCardsAI({ className }: { className?: string }) {
   ];
 
   return (
-    <Section className={cn("py-16 md:py-24", className)}>
+    <Section className={cn("py-16 md:py-24 bg-white", className)}>
       <div className="max-w-container mx-auto px-4">
         {/* Header */}
 
@@ -84,12 +84,12 @@ export default function FeatureCardsAI({ className }: { className?: string }) {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="bg-gradient-to-b from-card to-card/80 border border-border rounded-lg p-6 space-y-3 hover:-translate-y-1 transition-all duration-300 hover:shadow-lg hover:border-primary/30"
+              className="group bg-gradient-to-b from-card to-card/80 border border-border rounded-lg p-6 space-y-3 hover:shadow-lg hover:border-primary/30"
             >
               <p className="text-[10px] font-medium text-primary uppercase tracking-wider mt-2">{feature.category}</p>
 
-              <p className="font-medium text-lg text-foreground">{feature.title}</p>
-              <p className="text-sm leading-relaxed text-muted-foreground">{feature.description}</p>
+              <p className="font-medium text-lg text-foreground group-hover:text-primary transition-colors duration-300">{feature.title}</p>
+              <p className="text-sm leading-relaxed">{feature.description}</p>
               <div className="flex flex-wrap gap-2 mt-2">
                 <button className="inline-block text-[10px] text-foreground bg-card rounded-md px-2 py-1 border border-border">{feature.button1}</button>
                 <button className="inline-block text-[10px] text-foreground bg-card rounded-md px-2 py-1 border border-border">{feature.button2}</button>

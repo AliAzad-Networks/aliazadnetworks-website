@@ -49,8 +49,8 @@ export default function TestimonialsGridAlt({ className }: { className?: string 
   );
 
   return (
-    <Section className={cn("py-16 md:py-24", className)}>
-      <div className="max-w-container mx-auto px-4">
+    <Section className={cn("py-16 md:py-24 bg-white", className)}>
+      <div className="max-w-container mx-auto px-8">
         {/* Header */}
         <div className="mb-10">
           <h1 className="text-2xl md:text-3xl text-center md:text-left mb-3">

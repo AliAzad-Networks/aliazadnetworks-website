@@ -2,7 +2,7 @@ import Link from "next/link";
 import { ReactNode } from "react";
 
 import { siteConfig } from "@/config/site";
-
+import { cn } from "@/lib/utils";
 import {
   Accordion,
   AccordionContent,
@@ -171,7 +171,7 @@ export default function FAQ({
   className,
 }: FAQProps) {
   return (
-    <Section className={className}>
+    <Section className={cn("py-16 md:py-24 bg-white", className)}>
       <div className="relative overflow-hidden py-16 md:py-24 max-w-container mx-auto flex flex-col items-center gap-8 px-8">
         <h2 className="text-center text-3xl sm:text-5xl">
           {title}

@@ -73,7 +73,7 @@ export default function TestimonialsGrid() {
           <h2 className="text-4xl text-neutral-800 dark:text-neutral-100">
             Our Testimonials
           </h2>
-          <p className="text-base text-neutral-600 dark:text-neutral-400 max-w-6xl mt-2 mx-auto md:mx-0">
+          <p className="text-base max-w-6xl mt-2 mx-auto md:mx-0">
             See what our customers are saying as they build and launch projects at lightning speed.
           </p>
         </div>

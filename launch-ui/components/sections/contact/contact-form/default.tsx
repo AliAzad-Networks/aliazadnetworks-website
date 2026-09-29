@@ -19,7 +19,7 @@ export default function ContactHero({ className }: { className?: string }) {
   };
 
   return (
-    <Section className={cn("py-16 md:py-24", className)}>
+    <Section className={cn("py-16 md:py-24 bg-white", className)}>
       <div className="max-w-container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           

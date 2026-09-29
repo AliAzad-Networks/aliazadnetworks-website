@@ -58,7 +58,7 @@ export default function FeatureGrid2({
   className,
 }: FeatureGrid2Props) {
   return (
-    <Section className={cn("py-16 md:py-24 bg-muted/30", className)}>
+    <Section className={cn("py-16 md:py-24 bg-white", className)}>
       <div className="max-w-container mx-auto px-4">
         {/* Header */}
         <div className="mb-12">

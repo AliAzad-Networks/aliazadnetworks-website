@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export default function HeroAI({ className }: { className?: string }) {
   return (
-    <Section className={cn("relative overflow-hidden py-16 md:py-24", className)}>
+    <Section className={cn("relative overflow-hidden py-16 md:py-24 bg-gradient-to-b from-[#FAFCFE] to-[#F8F3F9] dark:from-primary/10 dark:to-background", className)}>
       {/* Background Pattern */}
 
       <div className="max-w-container mx-auto px-4 relative z-10">
@@ -30,7 +30,7 @@ export default function HeroAI({ className }: { className?: string }) {
 
             {/* Buttons */}
             <div className="flex items-center gap-4 mt-8">
-              <Button asChild className="bg-white hover:bg-slate-200 text-black rounded-md px-7 h-11">
+              <Button asChild className="rounded-md px-7 h-11">
                 <Link href="https://tally.so/r/Nppjvj">Get Started</Link>
               </Button>
               <Button

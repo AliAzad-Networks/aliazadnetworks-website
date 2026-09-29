@@ -55,7 +55,7 @@ export default function CTA({
   className,
 }: CTAProps) {
   return (
-    <Section className={cn("py-16 md:py-16 group relative overflow-hidden px-8", className)}>
+    <Section className={cn("py-16 md:py-16 group relative overflow-hidden px-8 bg-gradient-to-b from-[#FAFCFE] to-[#F8F3F9] dark:from-primary/10 dark:to-background overflow-hidden", className)}>
       <div className="max-w-container relative z-10 mx-auto flex flex-col items-center gap-6 text-center sm:gap-8">
         {/* Headline */}
         <h2 className="max-w-[800px] text-3xl leading-tight font-semibold sm:text-4xl sm:leading-tight">

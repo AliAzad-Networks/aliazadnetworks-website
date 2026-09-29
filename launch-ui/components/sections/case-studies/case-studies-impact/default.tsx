@@ -20,14 +20,14 @@ export default function PricingTable({ className }: { className?: string }) {
   ];
 
   return (
-    <Section className={cn("py-16 md:py-24 bg-background", className)}>
+    <Section className={cn("py-16 md:py-24 bg-white", className)}>
       <div className="max-w-container mx-auto px-4">
         {/* Header */}
         <div className="mb-12">
           <h1 className="text-2xl md:text-3xl text-foreground mb-4">
             Before AI vs. After AI - The Actual Numbers
           </h1>
-          <p className="text-sm text-muted-foreground">
+          <p className="text-sm">
             Based on averages across our six case studies. Your numbers will vary - but the direction is always the same.
           </p>
         </div>

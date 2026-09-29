@@ -60,7 +60,7 @@ export default function FeatureGridAlt({ className }: { className?: string }) {
   ];
 
   return (
-    <Section className={cn("py-16 md:py-24 bg-background", className)}>
+    <Section className={cn("py-16 md:py-24 bg-white", className)}>
       <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
         <div className="text-center gap-4 flex flex-col items-center">

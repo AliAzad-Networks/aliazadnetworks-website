@@ -23,7 +23,7 @@ export default function FeatureShowcase({ className }: { className?: string }) {
             {/* Left larger image */}
             <div className="md:col-span-2">
               <img
-                src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/features/image-4.png"
+                src="/assets/images/website/ai_breakthrough.png"
                 alt="Features showcase"
                 className="w-full rounded-xl shadow-md"
                 loading="lazy"
@@ -33,7 +33,7 @@ export default function FeatureShowcase({ className }: { className?: string }) {
             {/* Right column with image, text and link */}
             <div className="md:col-span-1">
               <img
-                src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/features/image-3.png"
+                src="/assets/images/website/ai_breakthrough1.png"
                 alt="Better design"
                 className="w-full rounded-xl shadow-md"
                 loading="lazy"

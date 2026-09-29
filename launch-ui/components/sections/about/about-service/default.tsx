@@ -76,7 +76,7 @@ export default function MarqueeText({
   };
 
   return (
-    <Section className={cn("py-8 md:py-12 bg-background overflow-hidden", className)}>
+    <Section className={cn("py-8 md:py-12 bg-white overflow-hidden", className)}>
       <div className="relative w-full mx-auto select-none">
         {/* Left Gradient Mask */}
         <div className="absolute left-0 top-0 h-full w-20 z-10 pointer-events-none bg-gradient-to-r from-background to-transparent"></div>
@@ -97,7 +97,7 @@ export default function MarqueeText({
             {duplicatedItems.map((item, index) => (
               <span
                 key={index}
-                className="inline-block text-lg md:text-xl font-medium text-muted-foreground hover:text-foreground transition-colors mx-4 md:mx-12"
+                className="inline-block text-lg md:text-xl font-medium hover:text-foreground transition-colors mx-4 md:mx-12"
               >
                 {item}
               </span>

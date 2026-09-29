@@ -26,12 +26,13 @@ export default function Home() {
     <main className="bg-background text-foreground min-h-screen w-full">
       <Navbar />
       <Hero />
-      <VideoFeature />
-      <Logos />
       
+      <Logos />
+      <VideoFeature />
+      <WhoWeAre />
       <Services />
       <Feature />
-      <WhoWeAre />
+      
       {/* <Process /> */}
       <Items />
       <AiWorks />

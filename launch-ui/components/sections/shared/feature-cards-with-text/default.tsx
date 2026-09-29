@@ -26,7 +26,7 @@ export default function FeatureCardsWithText({ className }: { className?: string
   ];
 
   return (
-    <Section className={cn("py-16 md:py-24 bg-gradient-to-b from-[#FAFCFE] to-[#F8F3F9] dark:from-primary/10 dark:to-background", className)}>
+    <Section className={cn("py-16 md:py-24 bg-white", className)}>
       <div className="max-w-container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-between gap-10 lg:gap-16">
           
@@ -57,7 +57,7 @@ export default function FeatureCardsWithText({ className }: { className?: string
                     <h2 className="text-md font-semibold text-foreground sm:text-lg">
                       {feature.title}
                     </h2>
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-sm">
                       {feature.description}
                     </p>
                   </div>

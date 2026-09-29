@@ -57,24 +57,7 @@ export default function HeroAlt({ className }: HeroAltProps) {
           <Button asChild variant="outline" size="lg" className="px-5 py-3 rounded-lg">
             <Link href="/contact">Discuss Your Project</Link>
           </Button>
-        </div>
-
-        {/* Divider */}
-        <div className="w-full max-w-[800px] h-[2px] mx-auto mt-10 bg-gradient-to-r from-transparent via-primary to-transparent"></div>
-
-        {/* Stats Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-12 max-w-[930px] mx-auto w-full">
-          {stats.map((stat, index) => (
-            <div key={index} className="text-center">
-              <h2 className="text-2xl md:text-3xl text-foreground">
-                {stat.value}
-              </h2>
-              <p className="text-xs md:text-sm text-muted-foreground">
-                {stat.label}
-              </p>
-            </div>
-          ))}
-        </div>
+        </div>        
       </div>
     </Section>
   );

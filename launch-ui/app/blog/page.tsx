@@ -19,7 +19,7 @@ export default function BlogListingPage() {
       <Navbar />
 
       {/* Banner-style Header */}
-      <section className="relative w-full overflow-hidden bg-[#f9f7f4] border-b border-border">
+      <section className="relative w-full overflow-hidden bg-gradient-to-b from-[#FAFCFE] to-[#F8F3F9] dark:from-primary/10 dark:to-background border-b border-border">
         {/* Background Blurs */}
         <div className="absolute pointer-events-none top-10 -z-0 left-20 size-64 bg-gradient-to-br from-[#EAF5FE] to-[#F5FAFF] blur-[180px] opacity-70" />
         <div className="absolute pointer-events-none bottom-10 -z-0 right-20 size-64 bg-gradient-to-br from-[#F5FAFF] to-[#EAF5FE] blur-[180px] opacity-70" />
