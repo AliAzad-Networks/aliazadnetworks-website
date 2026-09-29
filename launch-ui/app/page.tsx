@@ -29,9 +29,11 @@ export default function Home() {
       
       <Logos />
       <VideoFeature />
-      <WhoWeAre />
       <Services />
+      <WhoWeAre />
       <Feature />
+      
+      
       
       {/* <Process /> */}
       <Items />

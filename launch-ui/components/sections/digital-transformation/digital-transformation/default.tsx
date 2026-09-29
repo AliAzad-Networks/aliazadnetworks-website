@@ -31,9 +31,9 @@ export default function Hero({
   buttons = [
     {
       href: siteConfig.getStartedUrl,
-      text: "Submit Project Brief",
+      text: "Talk to an Expert",
       variant: "default",
-      icon: <ArrowRight className="mr-2 h-4 w-4" />,
+      iconRight: <ArrowRight className="ml-2 size-4" />,
     },
     {
       href: siteConfig.page.ourwork,
@@ -47,7 +47,7 @@ export default function Hero({
   className,
 }: HeroProps) {
   return (
-    <Section className={cn("py-16 md:py-24", className)}>
+    <Section className={cn("py-16 md:py-24 bg-gradient-to-b from-[#FAFCFE] to-[#F8F3F9] dark:from-primary/10 dark:to-background", className)}>
       <div className="max-w-container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-20">
           

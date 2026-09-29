@@ -61,7 +61,7 @@ export default function FeatureGrid({
   className,
 }: FeatureGridProps) {
   return (
-    <Section className={cn("py-16 md:py-24", className)}>
+    <Section className={cn("py-16 md:py-24 bg-white", className)}>
       <div className="max-w-container mx-auto px-4">
         {/* Header */}
         <button className="inline-block text-xs text-foreground bg-card rounded-full px-4 py-1.5 mb-4 border border-border">What We Do</button>
