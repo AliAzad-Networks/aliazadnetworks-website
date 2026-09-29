@@ -80,7 +80,7 @@ export default function VideoFeature({
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           {/* ---------- Left column: title + text + CTAs ---------- */}
           <div className="text-center lg:text-left">
-            <h2 className="text-xl md:text-2xl lg:text-3xl mb-5">
+            <h2 className="text-xl md:text-2xl lg:text-3xl mb-5 text-foreground">
               {title}
             </h2>
           </div>

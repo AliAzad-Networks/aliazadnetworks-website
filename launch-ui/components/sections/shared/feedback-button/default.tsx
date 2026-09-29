@@ -33,7 +33,7 @@ export default function FeedbackButton() {
           onClick={() => setIsOpen(false)}
         >
           <div
-            className="bg-card rounded-xl shadow-2xl w-full max-w-md p-6 relative"
+            className="bg-card rounded-md shadow-2xl w-full max-w-md p-6 relative"
             onClick={(e) => e.stopPropagation()}
           >
             <button
