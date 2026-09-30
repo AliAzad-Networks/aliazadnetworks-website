@@ -68,10 +68,10 @@ export default function FooterSection({
     {
       title: "Resources",
       links: [
-        { text: "Blogs & News", href: siteConfig.page.ourwork },
+        { text: "Blogs & News", href: siteConfig.page.blog },
         { text: "Our Teams", href: siteConfig.page.team },
         { text: "Our Work", href: siteConfig.page.casestudies },
-        { text: "Explore Events", href: siteConfig.page.blog },
+        { text: "Explore Events", href: siteConfig.page.ourwork },
       ],
     },
     {

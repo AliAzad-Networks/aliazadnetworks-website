@@ -49,6 +49,11 @@ interface NavigationProps {
 export default function Navigation({
   menuItems = [
     {
+      title: "Home",
+      isLink: true,
+      href: siteConfig.homeUrl,
+    },
+    {
       title: "Services",
       content: "default",
     },
@@ -59,6 +64,11 @@ export default function Navigation({
     {
       title: "Insights",
       content: "insights",
+    },
+    {
+      title: "Our Work",
+      isLink: true,
+      href: siteConfig.page.ourwork,
     },
     {
       title: "About AliAzad",
@@ -105,11 +115,6 @@ export default function Navigation({
     },
   ],
   insights = [
-    {
-      title: "Our Work",
-      href: siteConfig.page.ourwork,
-      description: "Explore our portfolio of projects showcasing our expertise and impact.",
-    },
     {
       title: "Our Team",
       href: siteConfig.page.team,
