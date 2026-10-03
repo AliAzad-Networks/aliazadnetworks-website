@@ -30,7 +30,7 @@ export default function FeatureGrid2({
       icon: <Grid className="w-6 h-6" strokeWidth={1.5} />,
       title: "All Credentials & Access",
       description: "Every API key, database password, cloud account, and third-party service login is transferred to you. Zero vendor lock-in with us.",
-      imageSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0ZSsB9AfwIq1vHCyKVeG6E9nqCjlPaHNIX7YR-GqUEA&s=10",
+      imageSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6v2vYABssS7Capfft7b6hQlPBvRzvFDTXPwWGo9Fdsw&s=10",
       imageAlt: "Feature workspace",
       width: "full",
     },

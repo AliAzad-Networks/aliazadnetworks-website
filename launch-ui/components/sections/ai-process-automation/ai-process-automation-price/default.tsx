@@ -81,12 +81,12 @@ export default function Pricing({
   className = "",
 }: PricingProps) {
   return (
-    <Section className={cn("py-16 md:py-24", className)}>
+    <Section className={cn("py-16 md:py-24 bg-white", className)}>
       <div className="mx-auto flex max-w-6xl flex-col gap-12 px-8">
         {(title || description) && (
           <div className="flex flex-col gap-2 sm:gap-2">
             {title && (
-              <h2 className="text-2xl md:text-3xl text-gray-900 leading-tight sm:text-5xl sm:leading-tight">
+              <h2 className="text-2xl md:text-3xl leading-tight sm:text-5xl sm:leading-tight">
                 {title}
               </h2>
             )}

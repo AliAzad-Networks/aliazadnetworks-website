@@ -9,13 +9,10 @@ export default function TrustedBanner({ className }: { className?: string }) {
   return (
     <Section className={cn("", className)}>
       <div className="px-4">
-        {/* Full-width Banner Container */}
-          {/* Background Blurs (stay full width) */}
-          <div className="absolute pointer-events-none top-10 -z-10 left-20 size-64 bg-gradient-to-br from-[#536DFF] to-[#F046FF] blur-[180px] opacity-70" />
-          <div className="absolute pointer-events-none bottom-10 -z-10 right-20 size-64 bg-gradient-to-br from-[#536DFF] to-[#F046FF] blur-[180px] opacity-70" />
+        {/* Full-width Banner Container */}      
 
           {/* Constrained content wrapper */}
-          <div className="max-w-7xl mx-auto">
+          <div className="max-w-container mx-auto">
             <div className="flex flex-col md:flex-row items-center justify-between gap-8">
               {/* Left Column: Text Content */}
               <div className="flex-1 flex flex-col items-center md:items-start text-center md:text-left z-10">
@@ -23,7 +20,7 @@ export default function TrustedBanner({ className }: { className?: string }) {
                 
 
                 {/* Headline */}
-                <h1 className="text-3xl md:text-4xl font-medium max-w-xl mt-5 bg-[#1b3139] text-transparent bg-clip-text">
+                <h1 className="text-3xl md:text-4xl font-medium bg-[#1b3139] text-transparent bg-clip-text">
                   Built on real work: AI for Startups
                 </h1>
 

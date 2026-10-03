@@ -11,7 +11,7 @@ export default function FeedbackButton() {
       {/* Desktop button – vertical text */}
       <button
         onClick={() => setIsOpen(true)}
-        className="fixed right-0 top-1/2 -translate-y-1/2 z-40 bg-gray-800 text-white py-3 px-3 rounded-l-sm shadow-sm hover:bg-gray-900 transition-all duration-200 hidden md:flex items-center justify-center"
+        className="fixed right-0 top-1/2 -translate-y-1/2 z-40 bg-slate-900 text-white py-3 px-3 rounded-l-sm shadow-sm hover:bg-gray-900 transition-all duration-200 hidden md:flex items-center justify-center"
       >
         <span className="[writing-mode:vertical-rl] text-sm font-medium whitespace-nowrap">
           Feedback

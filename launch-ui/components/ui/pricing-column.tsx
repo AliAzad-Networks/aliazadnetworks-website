@@ -73,7 +73,7 @@ export function PricingColumn({
             )}
             {name}
           </h2>
-          <p className="text-muted-foreground max-w-[220px] text-sm">
+          <p className="max-w-[220px] text-sm">
             {description}
           </p>
         </header>
