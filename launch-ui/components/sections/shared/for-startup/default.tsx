@@ -28,7 +28,7 @@ export default function TrustedBanner({ className }: { className?: string }) {
                 </h1>
 
                 {/* Description */}
-                <p className="text-base text-[#1b3139] max-w-4xl mt-4">
+                <p className="max-w-4xl mt-4">
                   The AliAzad Networks for Startup Program - powered bu the AliAzad Networks Platform - allows startups to build and ship better AI at scale
                 </p>
 

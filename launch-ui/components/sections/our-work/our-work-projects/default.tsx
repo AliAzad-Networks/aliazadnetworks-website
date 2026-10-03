@@ -247,7 +247,7 @@ export default function Portfolio() {
                 </h2>
 
               {/* Project Description */}
-              <p className="text-sm text-muted-foreground mb-4 line-clamp-2 px-3">
+              <p className="text-sm mb-4 line-clamp-2 px-3">
                 {project.description}
               </p>
 

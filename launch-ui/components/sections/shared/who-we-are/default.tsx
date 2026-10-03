@@ -60,7 +60,7 @@ export default function FeatureCards({ className }: { className?: string }) {
                 className="w-full h-auto object-cover shadow-md"
                 loading="lazy"
               />
-              <h3 className="text-xl md:text-2xl font-semibold text-foreground mt-4">
+              <h3 className="text-md md:text-xl font-semibold text-foreground mt-4">
                 {feature.title}
               </h3>
               <p className="text-base md:text-md mt-1">

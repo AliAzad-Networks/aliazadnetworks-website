@@ -27,7 +27,7 @@ const ServiceCard = ({ title, description, icon: Icon, href, imageSrc, imageAlt 
         <img
           src={imageSrc}
           alt={imageAlt}
-          className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+          className="absolute inset-0 w-full h-full object-cover"
           loading="lazy"
         />
         

@@ -50,7 +50,7 @@ export default function FeatureCardsWithText({ className }: { className?: string
                 href={feature.href}
                 className="block group"
               >
-                <div className="flex items-center gap-4 p-4 rounded-xl border border-border bg-card/90 hover:bg-white/10 dark:hover:bg-white/5 transition-all duration-200 cursor-pointer">
+                <div className="flex items-center gap-4 p-4 rounded-xl border border-border bg-card/90 hover:bg-white/10 dark:hover:bg-white/5 cursor-pointer">
                   <div className="shrink-0">
                   </div>
                   <div className="space-y-1 flex-1">
@@ -61,7 +61,7 @@ export default function FeatureCardsWithText({ className }: { className?: string
                       {feature.description}
                     </p>
                   </div>
-                  <ArrowRight className="w-5 h-5 text-primary group-hover:text-primary transition-colors shrink-0" />
+                  <ArrowRight className="w-5 h-5 text-primary group-hover:text-primary transition-all duration-100 group-hover:translate-x-1 shrink-0" />
                 </div>
               </Link>
             ))}

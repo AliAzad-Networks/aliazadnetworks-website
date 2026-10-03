@@ -5,13 +5,13 @@ import { cn } from "@/lib/utils";
 import { Section } from "@/components/ui/section";
 import { 
   ShieldCheck, 
-  BadgePercent, 
+  Network, 
   CodeXml, 
-  FileText,
-  MessageCircle,
+  UserCheck,
+  Handshake,
   Shield,
-  UserRoundCog,
-  KanbanSquare
+  UserPlus,
+  InfinityIcon
 } from "lucide-react";
 
 export default function FeatureGridAlt({ className }: { className?: string }) {
@@ -22,7 +22,7 @@ export default function FeatureGridAlt({ className }: { className?: string }) {
       description: "We begin with your business objective, not the technology. Every solution is designed around your requirements, users, processes, and long-term goals.",
     },
     {
-      icon: <BadgePercent className="w-5 h-5" />,
+      icon: <Network className="w-5 h-5" />,
       title: "Enterprise-Grade Engineering",
       description: "We build with modern technologies, scalable architecture, security best practices, and maintainable engineering standards.",
       active: true,
@@ -38,22 +38,22 @@ export default function FeatureGridAlt({ className }: { className?: string }) {
       description: "We follow disciplined practices for data protection, access control, secure development, and responsible handling of business information.",
     },
     {
-      icon: <MessageCircle className="w-5 h-5" />,
+      icon: <Handshake className="w-5 h-5" />,
       title: "Transparent Delivery",
       description: "From scope and milestones to progress and delivery, we maintain clear communication throughout the engagement.",
     },
     {
-      icon: <FileText className="w-5 h-5" />,
+      icon: <UserCheck className="w-5 h-5" />,
       title: "Dedicated Expertise",
       description: "Your project receives focused attention from experienced engineers and project leadership. The right people stay aligned with your objectives through delivery.",
     },
     {
-      icon: <UserRoundCog className="w-5 h-5" />,
+      icon: <UserPlus className="w-5 h-5" />,
       title: "Direct Collaboration",
       description: "Work closely with the people responsible for your project. We build our technology solutions to be designed with future business growth",
     },
     {
-      icon: <KanbanSquare className="w-5 h-5" />,
+      icon: <InfinityIcon className="w-5 h-5" />,
       title: "Long-Term Partnership",
       description: "We aim to become a trusted technology partner that continues to help your business improve, and automate",
     },
@@ -85,8 +85,8 @@ export default function FeatureGridAlt({ className }: { className?: string }) {
               )}
               
               <div className="text-primary">{feature.icon}</div>
-              <h3 className="text-sm font-medium text-foreground">{feature.title}</h3>
-              <p className="text-xs text-muted-foreground">{feature.description}</p>
+              <h3 className="text-sm font-medium">{feature.title}</h3>
+              <p className="text-xs">{feature.description}</p>
             </div>
           ))}
         </div>

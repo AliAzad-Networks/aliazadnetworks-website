@@ -34,6 +34,7 @@ interface VideoFeatureProps {
 
 export default function VideoFeature({
   title = "Why Choose AliAzad Networks?",
+  description = "A new AI world is here. Platformization empowers you to harness AI-ready infrastructure. And leverage services powered by AI to keep everything secure",
   poster = "/assets/images/video/ai-overview-poster.jpg",
   videoSrc = "/assets/videos/ai-overview.mp4",
   className,
@@ -83,6 +84,9 @@ export default function VideoFeature({
             <h2 className="text-xl md:text-2xl lg:text-3xl mb-5 text-foreground">
               {title}
             </h2>
+            <p className="text-sm md:text-base mb-6 text-foreground">
+              {description}
+            </p>
           </div>
 
           {/* ---------- Right column: video ---------- */}

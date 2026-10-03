@@ -41,7 +41,7 @@ export default function FeatureShowcase({ className }: { className?: string }) {
               <h3 className="text-2xl md:text-3xl font-semibold text-foreground mt-5 leading-tight">
                 AI/works<sup>TM</sup>. The breakthrough in how we deliver
               </h3>
-              <p className="text-muted-foreground mt-2">
+              <p className="mt-2">
                 See how our teams deliver higher-quality systems faster, and at a radically lower cost using AI/works<sup>TM</sup>, Thoughtworks Agentic Development Platform.
               </p>
               <Link

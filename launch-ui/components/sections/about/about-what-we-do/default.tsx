@@ -12,7 +12,7 @@ export default function WhatWeDo({ className }: { className?: string }) {
   const [activeVideo, setActiveVideo] = useState<string | null>(null);
 
   return (
-    <Section className={cn("py-16 md:py-24 bg-background", className)}>
+    <Section className={cn("py-16 md:py-24 bg-white", className)}>
       <div className="max-w-container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-center gap-10">
           
@@ -71,7 +71,7 @@ export default function WhatWeDo({ className }: { className?: string }) {
           </div>
           
           {/* Right Side - Content */}
-          <div className="text-sm text-muted-foreground max-w-lg">
+          <div className="text-sm max-w-lg">
             <h1 className="text-xl uppercase font-semibold text-foreground">
               What we do?
             </h1>
