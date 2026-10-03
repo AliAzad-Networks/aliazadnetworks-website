@@ -8,6 +8,7 @@ import rehypePrettyCode, {
 } from "rehype-pretty-code";
 
 import Navbar from "@/components/sections/shared/navbar/default";
+import TopBar from "@/components/sections/shared/topbar/default";
 import Footer from "@/components/sections/shared/footer/default";
 import Cta from "@/components/sections/shared/cta/default";
 
@@ -77,6 +78,7 @@ export default async function BlogPostPage({
 
   return (
     <main className="bg-white text-foreground min-h-screen w-full">
+      <TopBar />
       <Navbar />
 
       <article className="mx-auto max-w-3xl px-4 py-16 sm:px-6 lg:px-8">

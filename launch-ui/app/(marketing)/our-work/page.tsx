@@ -1,4 +1,5 @@
 import Navbar from "@/components/sections/shared/navbar/default";
+import TopBar from "@/components/sections/shared/topbar/default";
 import Footer from "@/components/sections/shared/footer/default"; 
 import OurWorkHero from "@/components/sections/our-work/our-work-hero/default";
 import AboutService from "@/components/sections/about/about-service/default";
@@ -15,6 +16,7 @@ export const metadata = {
 export default function OurWorkPage() {
   return (
     <main className="bg-background text-foreground min-h-screen w-full">
+      <TopBar />
       <Navbar />
       <OurWorkHero />
       <AboutService />

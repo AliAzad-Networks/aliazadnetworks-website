@@ -73,7 +73,7 @@ export default function Navbar({
   }, []);
 
   return (
-    <header className={cn("sticky top-0 z-50 -mb-4 px-4 bg-white border-b border-gray-200", className)}>
+    <header className={cn("sticky top-10 z-50 -mb-4 px-4 bg-white border-b border-gray-200", className)}>
       <div className="max-w-container relative mx-auto">
         <NavbarComponent>
           <NavbarLeft>

@@ -1,4 +1,5 @@
 import Navbar from "@/components/sections/shared/navbar/default";
+import TopBar from "@/components/sections/shared/topbar/default";
 import Footer from "@/components/sections/shared/footer/default"; 
 import CaseStudiesHero from "@/components/sections/case-studies/case-studies-hero/default";
 import AboutService from "@/components/sections/about/about-service/default";
@@ -19,6 +20,7 @@ export const metadata = {
 export default function CaseStudiesPage() {
   return (
     <main className="bg-background text-foreground min-h-screen w-full">
+      <TopBar />
       <Navbar />
       <CaseStudiesHero />
       <AboutService />

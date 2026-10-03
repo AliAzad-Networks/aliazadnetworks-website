@@ -1,4 +1,5 @@
 import Navbar from "@/components/sections/shared/navbar/default";
+import TopBar from "@/components/sections/shared/topbar/default";
 import Footer from "@/components/sections/shared/footer/default";
 import Cta from "@/components/sections/shared/cta/default";
 import { getAllPosts } from "@/lib/blog";
@@ -16,6 +17,7 @@ export default function BlogListingPage() {
 
   return (
     <main className="bg-white text-foreground min-h-screen w-full">
+      <TopBar />
       <Navbar />
 
       {/* Banner-style Header */}

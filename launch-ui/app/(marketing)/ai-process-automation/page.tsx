@@ -1,4 +1,5 @@
 import Navbar from "@/components/sections/shared/navbar/default";
+import TopBar from "@/components/sections/shared/topbar/default";
 import Footer from "@/components/sections/shared/footer/default"; 
 import AiProcessAutomation from "@/components/sections/ai-process-automation/ai-process-automation-hero/default";
 import AiProcessAutomationLogos from "@/components/sections/ai-process-automation/ai-process-automation-logos/default";
@@ -21,6 +22,7 @@ export const metadata = {
 export default function AiProcessAutomationChallengesPage() {
   return (
     <main className="bg-background text-foreground min-h-screen w-full">
+      <TopBar />
       <Navbar />
       <AiProcessAutomation />
       <AiProcessAutomationLogos />
