@@ -23,11 +23,8 @@ const ITEMS: IndustryItem[] = [
   { label: "E-commerce & Retail", href: "/industries/retail" },
   { label: "Logistics & Supply Chain", href: "/industries/logistics" },
   { label: "Real Estate & Construction", href: "/industries/real-estate" },
-  { label: "Manufacturing", href: "/industries/manufacturing" },
-  { label: "Energy & Utilities", href: "/industries/energy" },
+  { label: "Manufacturing & Energy", href: "/industries/manufacturing" },
   { label: "Government & Public Sector", href: "/industries/government" },
-  { label: "Media & Entertainment", href: "/industries/media" },
-  { label: "Professional Services", href: "/industries/professional-services" },
 ];
 
 /* ------------------------------------------------------------------ */

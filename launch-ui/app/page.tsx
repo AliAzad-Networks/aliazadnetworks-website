@@ -33,8 +33,8 @@ export default function Home() {
       <VideoFeature />
       <Services />
       <WhoWeAre />
-      <Feature />
       <IndustriesServices />
+      <Feature />
       {/* <Process /> */}
       <Items />
       <AiWorks />

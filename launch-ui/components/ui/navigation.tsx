@@ -79,39 +79,57 @@ export default function Navigation({
   ],
   components = [
     {
-      title: "Technology & SaaS",
+      title: "AI & Automation",
       href: siteConfig.page.AiProcessAutomation,
       description:
-        "AI solutions, IT operations, and SaaS innovation.",
+        "Enhanced efficiency and agility.",
+    },
+    {
+      title: "Financial Services",
+      href: siteConfig.page.AiProcessAutomation,
+      description:
+        "Improved decision-making and risk management.",
     },
     {
       title: "Healthcare & Life Sciences",
       href: siteConfig.page.AiProcessAutomation,
       description:
-        "Patient care, drug discovery, and healthcare operations.",
-    },
-    {
-      title: "Finance & FinTech",
-      href: siteConfig.page.AiProcessAutomation,
-      description:
-        "Financial analysis, risk management, and fintech innovation.",
-    },
-    {
-      title: "Retail & E-commerce",
-      href: siteConfig.page.AiProcessAutomation,
-      description: "Shopping, inventory management, and customer engagement.",
-    },
-    {
-      title: "Real Estate & Construction",
-      href: siteConfig.page.AiProcessAutomation,
-      description:
-        "Property management, construction planning, and real estate analytics.",
+        "Improved patient care and operational efficiency.",
     },
     {
       title: "Education & EdTech",
       href: siteConfig.page.AiProcessAutomation,
       description:
-        "Learning, educational content management, and engagement.",
+        "Personalized learning experiences.",
+    },
+    {
+      title: "E-commerce & Retail",
+      href: siteConfig.page.AiProcessAutomation,
+      description:
+        "Shopping cart optimization, and inventory management.",
+    },
+    {
+      title: "Logistics & Supply Chain",
+      href: siteConfig.page.AiProcessAutomation,
+      description:
+        "AI solutions, IT operations, and SaaS innovation.",
+    },
+    {
+      title: "Real Estate & Construction",
+      href: siteConfig.page.AiProcessAutomation,
+      description: "Construction planning, and property management.",
+    },
+    {
+      title: "Manufacturing & Energy",
+      href: siteConfig.page.AiProcessAutomation,
+      description:
+        "Energy optimization, and industrial automation.",
+    },
+    {
+      title: "Government & Public Sector",
+      href: siteConfig.page.AiProcessAutomation,
+      description:
+        "Public service delivery, and citizen engagement.",
     },
   ],
   insights = [
@@ -197,7 +215,7 @@ export default function Navigation({
                       ))}
                     </ul>
                     ) : item.content === "components" ? (
-                    <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+                    <ul className="grid w-[400px] gap-3 p-4 md:w-[700px] md:grid-cols-3 lg:w-[900px]">
                       {components.map((component) => (
                         <ListItem
                           key={component.title}
@@ -209,7 +227,7 @@ export default function Navigation({
                       ))}
                     </ul>
                   ) : item.content === "insights" ? ( // New insights dropdown
-                    <ul className="grid w-[280px] gap-3 p-4 md:w-[320px] md:grid-cols-1">
+                    <ul className="grid w-[280px] gap-3 p-4 md:w-[380px] md:grid-cols-1">
                       {insights.map((industry) => (
                         <ListItem
                           key={industry.title}
