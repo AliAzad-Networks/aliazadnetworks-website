@@ -76,11 +76,8 @@ export default function SocialProofFullWidth() {
 
   return (
     <Section
-  className="py-16 md:py-24"
-  style={{
-    background: "linear-gradient(35deg, rgba(15,105,160,1) 0%, rgba(23,71,122,1) 15%, rgba(29,45,92,1) 30%, rgba(29,45,92,1) 60%, rgba(39,93,112,1) 85%, rgba(55,131,114,1) 100%)",
-    backgroundSize: "cover",
-  }}
+  className="py-16 md:py-24 bg-slate-900"
+  
 >
       <div className="mx-auto max-w-7xl px-4 ">
         <div className="flex flex-col gap-8">
