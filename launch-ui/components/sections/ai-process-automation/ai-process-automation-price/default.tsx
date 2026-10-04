@@ -98,7 +98,7 @@ export default function Pricing({
               <PricingColumn
                 key={plan.name}
                 name={plan.name}
-                icon={plan.icon}
+                
                 description={plan.description}
                 originalPrice={plan.originalPrice}
                 promotionText={plan.promotionText}

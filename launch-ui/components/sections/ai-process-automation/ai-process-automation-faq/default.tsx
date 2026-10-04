@@ -146,7 +146,7 @@ export default function FAQ({
   className,
 }: FAQProps) {
   return (
-    <Section className={cn("py-16 md:py-24 px-8", className)}>
+    <Section className={cn("py-16 md:py-24 px-8 bg-white", className)}>
       <div className="max-w-container mx-auto flex flex-col items-center gap-8">
         <h2 className="text-center text-3xl font-semibold sm:text-5xl">
           {title}
