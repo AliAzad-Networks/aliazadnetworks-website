@@ -11,6 +11,7 @@ import Price from "../components/sections/pricing/price/default";
 import Stats from "../components/sections/shared/stats/default";
 import FeedbackButton from "../components/sections/shared/feedback-button/default"
 import VideoFeature from "@/components/sections/shared/video-feature/default";
+import IndustriesServices from "@/components/sections/shared/industries-services/default";
 import Services from "../components/sections/shared/services/default";
 import Feature from "../components/sections/shared/feature-cards-with-text/default";
 import WhoWeAre from "../components/sections/shared/who-we-are/default";
@@ -28,15 +29,12 @@ export default function Home() {
       <TopBar />
       <Navbar />
       <Hero />
-      
       <Logos />
       <VideoFeature />
       <Services />
       <WhoWeAre />
       <Feature />
-      
-      
-      
+      <IndustriesServices />
       {/* <Process /> */}
       <Items />
       <AiWorks />
