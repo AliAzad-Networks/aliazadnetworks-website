@@ -34,9 +34,10 @@ export default function Home() {
       <Services />
       <WhoWeAre />
       <IndustriesServices />
-      <Feature />
+      
       {/* <Process /> */}
       <Items />
+      <Feature />
       <AiWorks />
       <ForStartup />
       <FeedbackButton />
