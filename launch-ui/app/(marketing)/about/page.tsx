@@ -1,5 +1,5 @@
 import Navbar from "@/components/sections/shared/navbar/default";
-import TopBar from "@/components/sections/shared/topbar/default";
+import Topbar from "@/components/sections/shared/topbar/default";
 import Footer from "@/components/sections/shared/footer/default"; 
 import About from "@/components/sections/about/default";
 import AboutService from "@/components/sections/about/about-service/default";
@@ -17,7 +17,7 @@ export default function AboutPage() {
   return (
     <main className="bg-background text-foreground min-h-screen w-full">
       
-      <TopBar />
+      <Topbar />
       <Navbar />
       <About />
       <AboutService />

@@ -1,9 +1,7 @@
 import Navbar from "@/components/sections/shared/navbar/default";
-import TopBar from "@/components/sections/shared/topbar/default";
+import Topbar from "@/components/sections/shared/topbar/default";
 
 import Footer from "@/components/sections/shared/footer/default";
-import Cta from "@/components/sections/shared/cta/default";
-
 import { CareersHero } from "./components/CareersHero";
 import { CareerAreas } from "./components/CareerAreas";
 
@@ -17,11 +15,10 @@ export const metadata = {
 export default function CareersPage() {
   return (
     <main className="bg-background text-foreground min-h-screen w-full">
-      <TopBar />
+      <Topbar />
       <Navbar />
       <CareersHero />
       <CareerAreas />
-      <Cta />
       <Footer />
     </main>
   );

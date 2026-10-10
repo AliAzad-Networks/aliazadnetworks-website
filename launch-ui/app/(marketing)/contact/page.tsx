@@ -1,5 +1,5 @@
 import Navbar from "@/components/sections/shared/navbar/default";
-import TopBar from "@/components/sections/shared/topbar/default";
+import Topbar from "@/components/sections/shared/topbar/default";
 import Footer from "@/components/sections/shared/footer/default"; 
 import ContactHero from "@/components/sections/contact/contact-form/default";
 import FAQ from "@/components/sections/shared/faq/default";
@@ -13,7 +13,7 @@ export const metadata = {
 export default function ContactPage() {
   return (
     <main className="bg-background text-foreground min-h-screen w-full">
-      <TopBar />
+      <Topbar />
       <Navbar />
       <ContactHero />
       <FAQ />

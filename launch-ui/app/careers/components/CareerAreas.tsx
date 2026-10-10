@@ -32,7 +32,7 @@ const AREAS = [
 
 export function CareerAreas() {
   return (
-    <Section className="py-16 md:py-24">
+    <Section className="py-16 md:py-24 bg-white">
       <div className="max-w-container mx-auto px-4">
         <CareerSectionHeading
           eyebrow="Teams"
@@ -48,7 +48,7 @@ export function CareerAreas() {
               className="group flex flex-col gap-2 p-6 border-b border-border sm:border-r sm:[&:nth-child(2n)]:border-r-0 lg:[&:nth-child(2n)]:border-r lg:[&:nth-child(3n)]:border-r-0 hover:bg-muted/40 transition-colors"
             >
               <div className="flex items-center justify-between">
-                <h3 className="text-base font-semibold text-foreground group-hover:text-primary transition-colors">
+                <h3 className="text-base text-foreground group-hover:text-primary transition-colors">
                   {area.title}
                 </h3>
                 <ArrowRight className="h-4 w-4 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 group-hover:text-primary transition-all" />

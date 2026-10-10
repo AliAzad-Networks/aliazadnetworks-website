@@ -1,5 +1,5 @@
 import Navbar from "@/components/sections/shared/navbar/default";
-import TopBar from "@/components/sections/shared/topbar/default";
+import Topbar from "@/components/sections/shared/topbar/default";
 import Footer from "@/components/sections/shared/footer/default"; 
 import Price from "@/components/sections/pricing/price/default";
 import Cta from "@/components/sections/shared/cta/default";
@@ -12,7 +12,7 @@ export const metadata = {
 export default function PricingPage() {
   return (
     <main className="bg-background text-foreground min-h-screen w-full">
-      <TopBar />
+      <Topbar />
       <Navbar />
       <Price />
       <Cta />

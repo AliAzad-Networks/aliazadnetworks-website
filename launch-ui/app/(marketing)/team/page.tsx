@@ -1,5 +1,5 @@
 import Navbar from "@/components/sections/shared/navbar/default";
-import TopBar from "@/components/sections/shared/topbar/default";
+import Topbar from "@/components/sections/shared/topbar/default";
 import Footer from "@/components/sections/shared/footer/default"; 
 import Team from "@/components/sections/team/team/default";
 import TeamTop from "@/components/sections/team/team-top/default";
@@ -13,7 +13,7 @@ export const metadata = {
 export default function TeamPage() {
   return (
     <main className="bg-background text-foreground min-h-screen w-full">
-      <TopBar />
+      <Topbar />
       <Navbar />
       <Team />
       <TeamTop />

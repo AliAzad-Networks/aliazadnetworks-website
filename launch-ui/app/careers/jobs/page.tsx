@@ -22,13 +22,13 @@ export default function JobsPage() {
       <Topbar />
       <Navbar />
 
-      <Section className="py-16 md:py-20">
+      <Section className="py-16 md:py-20 bg-white">
         <div className="max-w-container mx-auto px-4">
           <div className="mb-10 max-w-2xl">
             <span className="text-xs font-semibold uppercase tracking-widest text-primary">
               Open Roles
             </span>
-            <h1 className="mt-3 text-3xl md:text-4xl font-semibold tracking-tight text-foreground">
+            <h1 className="mt-3 text-xl md:text-2xl font-semibold tracking-tight text-foreground">
               Find your next role
             </h1>
             <p className="mt-3 text-muted-foreground">

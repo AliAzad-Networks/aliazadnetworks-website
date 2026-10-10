@@ -5,7 +5,6 @@ import { ArrowLeft } from "lucide-react";
 import Navbar from "@/components/sections/shared/navbar/default";
 import Topbar from "@/components/sections/shared/topbar/default";
 import Footer from "@/components/sections/shared/footer/default";
-import Cta from "@/components/sections/shared/cta/default";
 import { Section } from "@/components/ui/section";
 import { Button } from "@/components/ui/button";
 import { JobMetadata } from "@/components/careers/JobMetadata";
@@ -41,7 +40,7 @@ function BulletList({ items }: { items: string[] }) {
   return (
     <ul className="space-y-2.5">
       {items.map((item, i) => (
-        <li key={i} className="flex gap-3 text-muted-foreground leading-relaxed">
+        <li key={i} className="flex gap-3 leading-relaxed">
           <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
           <span>{item}</span>
         </li>
@@ -60,7 +59,7 @@ export default async function JobDetailPage({
   if (!job) notFound();
 
   return (
-    <main className="bg-background text-foreground min-h-screen w-full">
+    <main className="bg-white text-foreground min-h-screen w-full">
       <Topbar />
       <Navbar />
 
@@ -80,15 +79,12 @@ export default async function JobDetailPage({
             <span className="text-xs font-semibold uppercase tracking-widest text-primary">
               {job.department}
             </span>
-            <h1 className="mt-3 text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground">
+            <h1 className="mt-3 text-xl md:text-2xl lg:text-3xl font-semibold tracking-tight text-foreground">
               {job.title}
             </h1>
             <div className="mt-5">
               <JobMetadata job={job} />
             </div>
-            <p className="mt-6 text-lg text-muted-foreground leading-relaxed max-w-3xl">
-              {job.description}
-            </p>
           </header>
 
           {/* Body */}
@@ -96,14 +92,14 @@ export default async function JobDetailPage({
             {/* Left: content */}
             <div className="lg:col-span-2 space-y-10">
               <section>
-                <h2 className="text-xl font-semibold text-foreground mb-4">
+                <h2 className="text-base font-medium text-foreground mb-4">
                   What you'll do
                 </h2>
                 <BulletList items={job.responsibilities} />
               </section>
 
               <section>
-                <h2 className="text-xl font-semibold text-foreground mb-4">
+                <h2 className="text-base font-medium text-foreground mb-4">
                   What we're looking for
                 </h2>
                 <BulletList items={job.qualifications} />
@@ -111,7 +107,7 @@ export default async function JobDetailPage({
 
               {job.preferredQualifications && job.preferredQualifications.length > 0 && (
                 <section>
-                  <h2 className="text-xl font-semibold text-foreground mb-4">
+                  <h2 className="text-base font-medium text-foreground mb-4">
                     Nice to have
                   </h2>
                   <BulletList items={job.preferredQualifications} />
@@ -119,14 +115,14 @@ export default async function JobDetailPage({
               )}
 
               <section>
-                <h2 className="text-xl font-semibold text-foreground mb-4">
+                <h2 className="text-base font-medium text-foreground mb-4">
                   Skills
                 </h2>
                 <div className="flex flex-wrap gap-2">
                   {job.skills.map((skill) => (
                     <span
                       key={skill}
-                      className="rounded-full border border-border px-3 py-1 text-sm text-muted-foreground"
+                      className="rounded-full border border-border px-3 py-1 text-sm"
                     >
                       {skill}
                     </span>
@@ -164,7 +160,6 @@ export default async function JobDetailPage({
         </div>
       </Section>
 
-      <Cta />
       <Footer />
     </main>
   );

@@ -6,7 +6,7 @@ import Items from "../components/sections/shared/items/default";
 import Logos from "../components/sections/shared/logos/default";
 import Process from "../components/sections/process/process/default";
 import Navbar from "../components/sections/shared/navbar/default";
-import TopBar from "@/components/sections/shared/topbar/default";
+import Topbar from "@/components/sections/shared/topbar/default";
 import Price from "../components/sections/pricing/price/default";
 import Stats from "../components/sections/shared/stats/default";
 import FeedbackButton from "../components/sections/shared/feedback-button/default"
@@ -26,7 +26,7 @@ import Events from "../components/sections/shared/events/default";
 export default function Home() {
   return (
     <main className="bg-background text-foreground min-h-screen w-full">
-      <TopBar />
+      <Topbar />
       <Navbar />
       <Hero />
       <Logos />

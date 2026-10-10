@@ -27,7 +27,7 @@ const AUTH_LINKS = [
 /*  Component                                                          */
 /* ------------------------------------------------------------------ */
 
-export default function TopBar({ className }: { className?: string }) {
+export default function Topbar({ className }: { className?: string }) {
   const [searchOpen, setSearchOpen] = useState(false);
   const [query, setQuery] = useState("");
   const [loginOpen, setLoginOpen] = useState(false);
