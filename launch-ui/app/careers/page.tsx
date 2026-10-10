@@ -6,9 +6,6 @@ import Cta from "@/components/sections/shared/cta/default";
 
 import { CareersHero } from "./components/CareersHero";
 import { CareerAreas } from "./components/CareerAreas";
-import { CultureSection } from "./components/CultureSection";
-import { HiringProcess } from "./components/HiringProcess";
-import { CareersCTA } from "./components/CareersCTA";
 
 export const metadata = {
   title: "Careers | AliAzad Networks",
@@ -24,9 +21,6 @@ export default function CareersPage() {
       <Navbar />
       <CareersHero />
       <CareerAreas />
-      <CultureSection />
-      <HiringProcess />
-      <CareersCTA />
       <Cta />
       <Footer />
     </main>

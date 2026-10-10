@@ -1,7 +1,6 @@
 import Navbar from "@/components/sections/shared/navbar/default";
 import Footer from "@/components/sections/shared/footer/default";
 import { Section } from "@/components/ui/section";
-import { CultureSection } from "../components/CultureSection";
 
 export const metadata = {
   title: "Life at AliAzad | AliAzad Networks Careers",
@@ -26,9 +25,6 @@ export default function LifeAtAliAzadPage() {
           </p>
         </div>
       </Section>
-
-      <CultureSection />
-
       <Footer />
     </main>
   );

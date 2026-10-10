@@ -6,32 +6,26 @@ import { CareerSectionHeading } from "@/components/careers/CareerSectionHeading"
 const AREAS = [
   {
     title: "Engineering",
-    description: "Build reliable, scalable systems for real clients.",
     href: "/careers/jobs?department=Engineering",
   },
   {
     title: "AI & Data",
-    description: "Design and ship production-grade AI systems.",
     href: "/careers/jobs?department=AI%20%26%20Data",
   },
   {
     title: "Product & Design",
-    description: "Craft experiences that feel effortless.",
     href: "/careers/jobs?department=Product%20%26%20Design",
   },
   {
     title: "Research",
-    description: "Explore the frontier of applied AI and systems.",
     href: "/careers/jobs?department=Research",
   },
   {
     title: "Operations",
-    description: "Keep our delivery engine running smoothly.",
     href: "/careers/jobs?department=Operations",
   },
   {
     title: "Sales & Marketing",
-    description: "Tell our story to the world.",
     href: "/careers/jobs?department=Sales%20%26%20Marketing",
   },
 ];
@@ -57,9 +51,9 @@ export function CareerAreas() {
                 <h3 className="text-base font-semibold text-foreground group-hover:text-primary transition-colors">
                   {area.title}
                 </h3>
-                <ArrowRight className="h-4 w-4 text-muted-foreground opacity-0 group-hover:opacity-100 group-hover:translate-x-1 group-hover:text-primary transition-all" />
+                <ArrowRight className="h-4 w-4 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 group-hover:text-primary transition-all" />
               </div>
-              <p className="text-sm text-muted-foreground">{area.description}</p>
+              
             </Link>
           ))}
         </div>

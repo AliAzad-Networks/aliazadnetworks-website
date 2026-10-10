@@ -24,7 +24,7 @@ export function CareerSectionHeading({
         {title}
       </h2>
       {description && (
-        <p className="mt-3 text-base text-muted-foreground leading-relaxed">
+        <p className="mt-3 text-base leading-relaxed">
           {description}
         </p>
       )}
