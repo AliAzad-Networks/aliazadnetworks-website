@@ -1,0 +1,30 @@
+"use client";
+
+import { useEffect } from "react";
+import { Button } from "@/components/ui/button";
+
+export default function Error({
+  error,
+  reset,
+}: {
+  error: Error & { digest?: string };
+  reset: () => void;
+}) {
+  useEffect(() => {
+    console.error("[careers] page error:", error);
+  }, [error]);
+
+  return (
+    <div className="flex min-h-screen flex-col items-center justify-center bg-background px-4 text-center">
+      <h2 className="text-2xl font-semibold text-foreground">
+        Something went wrong
+      </h2>
+      <p className="mt-2 text-muted-foreground max-w-md">
+        We couldn't load the careers page. Please try again in a moment.
+      </p>
+      <Button className="mt-6" onClick={reset}>
+        Try again
+      </Button>
+    </div>
+  );
+}

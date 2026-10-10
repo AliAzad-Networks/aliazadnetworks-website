@@ -13,6 +13,7 @@ import { cn } from "@/lib/utils";
 const QUICK_LINKS = [
   { label: "Blog", href: "/blog" },
   { label: "Case Studies", href: "/case-studies" },
+  { label: "Careers", href: "/careers" },
   { label: "Support", href: "/contact" },
 ];
 

@@ -26,6 +26,7 @@ export const siteConfig = {
     ourwork: "/our-work",
     blog: "/blog",
     events: "/events",
+    careers: "/careers",
   },
   pricing: {
     url: "/pricing",
